@@ -81,6 +81,9 @@ public class BlackJackGame {
                 Methods.setMessage("Okay thanks for playing");
                 Methods.setMessage2("Come back anytime for more");
                 Methods.setMessage3(" ");
+                Methods.setMessage4(" ");
+//                Methods.setMessage5(" ");
+//                Methods.setMessage6(" ");
             }
 
         }

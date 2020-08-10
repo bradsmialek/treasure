@@ -96,11 +96,11 @@ public class StoryLine {
         //clues
         rum1Clues = new ArrayList<>();
         rum1Clues.add("Clue: four times. 6 upside down is a 9 now."); //91 characters across
-        rum1Clues.add("rum1 Clue 1  message 2");
-        rum1Clues.add("rum1 Clue 1  message 3");
-        rum1Clues.add("rum1 Clue 1  message 4");
-        rum1Clues.add("rum1 Clue 1  message 5");
-        rum1Clues.add("rum1 Clue 1  message 6");
+//        rum1Clues.add("rum1 Clue 1  message 2");
+//        rum1Clues.add("rum1 Clue 1  message 3");
+//        rum1Clues.add("rum1 Clue 1  message 4");
+//        rum1Clues.add("rum1 Clue 1  message 5");
+//        rum1Clues.add("rum1 Clue 1  message 6");
 
         ////////////////////////////////////////////Port Royal
         portRoyal1messages = new ArrayList<>();

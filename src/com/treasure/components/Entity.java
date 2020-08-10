@@ -11,8 +11,8 @@ public class Entity {
     protected static int y;
     protected int health;
     protected int xp;
-    protected int level;
-    protected int nextLevel = 100;
+    protected int level = 1;
+    protected int nextLevel = 50;
     protected int maxHealth;
 
 
@@ -71,30 +71,26 @@ public class Entity {
         return nextLevel;
     }
 
-    public void gainXP(int amount) {
-        this.xp+=amount;
-        setLevel(this.xp);
-    }
 
     public void setLevel(int xp){
 
-        if(xp>=500) {
+        if(xp>=400) {
             this.level = 6;
         }
-        else if(xp>=400) {
+        else if(xp>=275) {
             this.level = 5;
         }
-        else if(xp>=300) {
+        else if(xp>=175) {
             this.level = 4;
         }
-        else if(xp>=200) {
+        else if(xp>=100) {
             this.level = 3;
         }
-        else if(xp>=100) {
+        else if(xp>=50) {
             this.level = 2;
         }
-        else if(xp>=0) {
-            this.level = 1;
+        else{
+            System.out.println("Error with levels");
         }
         setNextLevel(this.level);
     }
@@ -105,19 +101,19 @@ public class Entity {
             this.nextLevel = 600;
         }
         else if(level == 5) {
-            this.nextLevel = 500;
-        }
-        else if(level == 4) {
             this.nextLevel = 400;
         }
+        else if(level == 4) {
+            this.nextLevel = 275;
+        }
         else if(level == 3) {
-            this.nextLevel = 300;
+            this.nextLevel = 175;
         }
         else if(level == 2) {
-            this.nextLevel = 200;
+            this.nextLevel = 100;
         }
         else if(level == 1) {
-            this.nextLevel = 100;
+            this.nextLevel = 50;
         }
     }
 

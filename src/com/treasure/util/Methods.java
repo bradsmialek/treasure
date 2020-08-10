@@ -1,5 +1,6 @@
 package com.treasure.util;
 
+import com.sun.source.doctree.AttributeTree;
 import com.treasure.Attributes;
 import com.treasure.components.*;
 
@@ -148,15 +149,13 @@ public class Methods {
                 locationDecided = LocationDecision.LOCATION;
                 break;
             case VENDOR:
-                message = "Please explore my store. My stock is low.";
-                message2 = " ";
+                message = "Would you like to enter the Vendor's shop?";
+                message2 = "   [Y] Yes     [N] No";
                 message3 = " ";
                 message4 = " ";
                 message5 = " ";
                 message6 = " ";
-                Attributes.currentMap = new Maps(7);
-                Attributes.currentIsland = new Island(7);
-                Methods.initializeTiles();
+                decided = Decision.VENDOR;
                 break;
             case POI:
                 message = "Would you like to talk?";
@@ -227,6 +226,7 @@ public class Methods {
                 decided = Decision.WHISKEY;
                 break;
             case XP:
+                Attributes.player.addsXP(200);
                 message = "You would you like to purchase XP points?";
                 message2 = "   [Y] Yes     [N] No";
                 message3 = " ";
@@ -255,6 +255,7 @@ public class Methods {
         TALK,
         PLAY_BLACKJACK,
         PLAY_LOTTERY,
+        VENDOR,
         CORN,
         WHISKEY,
         SWORD,
@@ -430,6 +431,32 @@ public class Methods {
         }
         else if (decided == Decision.PLAY_LOTTERY) {
             message = "'I'd rather not lose me money...'";
+            message2 = " ";
+            message3 = " ";
+        }
+
+        else if(decided == Decision.VENDOR && yn) {
+            if(Attributes.player.getsLevel()>=3){
+                message = "Please explore my store. My stock is low.";
+                message2 = " ";
+                message3 = " ";
+                message4 = " ";
+                message5 = " ";
+                message6 = " ";
+                Attributes.currentMap = new Maps(7);
+                Attributes.currentIsland = new Island(7);
+                Methods.initializeTiles();
+            }else{
+                message = "You must be a level 3 to use the Vendor shop.";
+                message2 = " ";
+                message3 = " ";
+                message4 = " ";
+                message5 = " ";
+                message6 = " ";
+            }
+        }
+        else if(decided == Decision.VENDOR) {
+            message = "Another time then...";
             message2 = " ";
             message3 = " ";
         }

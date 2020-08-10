@@ -173,13 +173,13 @@ public class StoryLine {
         cruces4messages.add("Old Shipmate Bill the Dreadful: Where the hell have you been??");
         cruces4messages.add("Did you not get my letters? You're not safe here!");
         cruces4messages.add("Take this key and head west. There is a hidden cavern on the coast.");
-        cruces4messages.add("Hide out in there until this start to die down...");
+        cruces4messages.add("Hide out in there until things start to die down...");
         cruces4messages.add("Best of luck... now run!");
         cruces4messages.add("");
 
         //clues
         cruces1Clues = new ArrayList<>();
-        cruces1Clues.add("Clue:A dummy will lead you to the green..."); //91 characters across
+        cruces1Clues.add("Clue: A dummy will lead you to the green..."); //91 characters across
         cruces1Clues.add(" ");
         cruces1Clues.add(" ");
         cruces1Clues.add(" ");
@@ -188,7 +188,7 @@ public class StoryLine {
 
         ////////////////////////////////////////////Isla de muerta
         muerta1messages = new ArrayList<>();
-        muerta1messages.add("rum 1  message 1");
+        muerta1messages.add("");
         muerta1messages.add("rum 1  message 2");
         muerta1messages.add("rum 1  message 3");
         muerta1messages.add("rum 1  message 4");

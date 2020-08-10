@@ -68,6 +68,7 @@ public class Methods {
         //Handles the player movement
         switch(tile){
             case NOTHING:
+                Attributes.currentSubGame = SubGames.NONE;
                 Attributes.player.move(dir);
                 // every time player moves previous displayed message will dissapear
                 message = " ";
@@ -134,7 +135,7 @@ public class Methods {
 
                 break; //Handles encounters with pirates
             case FRIENDLY:
-                message = RandomMessage.randomMessageGenerator();
+                RandomMessage.getRandomMessage();
                 // drops random items with random generator
                 break;
             case MAP:

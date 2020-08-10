@@ -134,7 +134,7 @@ public class Methods {
 
                 break; //Handles encounters with pirates
             case FRIENDLY:
-                message = RandomMessage.randomMessageGenerator();
+                RandomMessage.getRandomMessage();
                 // drops random items with random generator
                 break;
             case MAP:

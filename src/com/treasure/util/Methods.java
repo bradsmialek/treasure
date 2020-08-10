@@ -631,32 +631,57 @@ public class Methods {
             Methods.initializeTiles();
         }
         else if (islandNumber == 3) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(3);
-            Attributes.currentMap = new Maps(3);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=1){
+                Attributes.currentIsland = new Island(3);
+                Attributes.currentMap = new Maps(3);
+                Methods.initializeTiles();
+            }else{
+                message = "You need a piece of the map to get to Port Royal!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
+
         }
         else if (islandNumber == 4) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(4);
-            Attributes.currentMap = new Maps(4);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=2){
+                Attributes.currentIsland = new Island(4);
+                Attributes.currentMap = new Maps(4);
+                Methods.initializeTiles();
+            }else{
+                message = "You need a piece of the map to get to Isla De Cruces!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
         }
         else if (islandNumber == 5) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(5);
-            Attributes.currentMap = new Maps(5);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=3){
+                Attributes.currentIsland = new Island(5);
+                Attributes.currentMap = new Maps(5);
+                Methods.initializeTiles();
+            }else{
+                message = "You need a piece of the map to get to Isle De Muerta!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
         }
         else if (islandNumber == 6) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(6);
-            Attributes.currentMap = new Maps(6);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=4 && Attributes.player.getSpecialKeys()==3 && Attributes.player.getEmerald()==1){
+                Attributes.currentIsland = new Island(6);
+                Attributes.currentMap = new Maps(6);
+                Methods.initializeTiles();
+            }else{
+                message = "You need the map, 3 special keys, and a green emerald to get to Treasure Island!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
         }
         else {
             message = "Argh... fine, stay here.";

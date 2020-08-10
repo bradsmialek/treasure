@@ -96,11 +96,11 @@ public class StoryLine {
         //clues
         rum1Clues = new ArrayList<>();
         rum1Clues.add("Clue: four times. 6 upside down is a 9 now."); //91 characters across
-//        rum1Clues.add("rum1 Clue 1  message 2");
-//        rum1Clues.add("rum1 Clue 1  message 3");
-//        rum1Clues.add("rum1 Clue 1  message 4");
-//        rum1Clues.add("rum1 Clue 1  message 5");
-//        rum1Clues.add("rum1 Clue 1  message 6");
+        rum1Clues.add("");
+        rum1Clues.add("");
+        rum1Clues.add("");
+        rum1Clues.add("");
+        rum1Clues.add("");
 
         ////////////////////////////////////////////Port Royal
         portRoyal1messages = new ArrayList<>();
@@ -116,8 +116,8 @@ public class StoryLine {
         portRoyal2messages.add("Wait.. are you from the Black Pearl?! That boat is...");
         portRoyal2messages.add("Never mind... here is an emerald for you.. ");
         portRoyal2messages.add("But you must leave immediately and never come back!");
-//        portRoyal2messages.add("rum 2  message 5");
-//        portRoyal2messages.add("rum 2  message 6");
+        portRoyal2messages.add("");
+        portRoyal2messages.add("");
 
         portRoyal3messages = new ArrayList<>();
         portRoyal3messages.add("Waitress: Are you the one who ordered the Rum and Drums??...");
@@ -125,66 +125,66 @@ public class StoryLine {
         portRoyal3messages.add("I cannot speak on it, but there is something for you here in the restaurant.");
         portRoyal3messages.add("It is on you to find it and do what you need with what you find...");
         portRoyal3messages.add("Once you find it... don't speak to anyone and I suggest you leave immediately...");
-        portRoyal3messages.add("The last time of you came here... it ended tragically... ");
+        portRoyal3messages.add("The last time one of you came here... it ended tragically... ");
 
         portRoyal4messages = new ArrayList<>();
-        portRoyal4messages.add("rum 4  message 1");
-        portRoyal4messages.add("rum 4  message 2");
-        portRoyal4messages.add("rum 4  message 3");
-        portRoyal4messages.add("rum 4  message 4");
-        portRoyal4messages.add("rum 4  message 5");
-        portRoyal4messages.add("rum 4  message 6");
+        portRoyal4messages.add("Drunken Sailor Sam: Hi stranger, you must be new here.. wanna play some poker?");
+        portRoyal4messages.add("I am usually not thi....(drunkenly falls) uh, I'm fine... ");
+        portRoyal4messages.add("I only had like one drink, I'll be fine.");
+        portRoyal4messages.add("Here go buy me another beer (mistakenly hands over a special key)");
+        portRoyal4messages.add("");
+        portRoyal4messages.add("");
 
         //clues
         portRoyal1Clues = new ArrayList<>();
-        portRoyal1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        portRoyal1Clues.add("rum1 Clue 1  message 2");
-        portRoyal1Clues.add("rum1 Clue 1  message 3");
-        portRoyal1Clues.add("rum1 Clue 1  message 4");
-        portRoyal1Clues.add("rum1 Clue 1  message 5");
-        portRoyal1Clues.add("rum1 Clue 1  message 6");
+        portRoyal1Clues.add("Clue: On a beach, the key is to stand for something or you will for for anything..."); //91 characters across
+        portRoyal1Clues.add(" ");
+        portRoyal1Clues.add(" ");
+        portRoyal1Clues.add(" ");
+        portRoyal1Clues.add(" ");
+        portRoyal1Clues.add(" ");
 
         ////////////////////////////////////////////Isla de Cruces
         cruces1messages = new ArrayList<>();
-        cruces1messages.add("rum 1  message 1");
-        cruces1messages.add("rum 1  message 2");
-        cruces1messages.add("rum 1  message 3");
-        cruces1messages.add("rum 1  message 4");
-        cruces1messages.add("rum 1  message 5");
-        cruces1messages.add("rum 1  message 6");
+        cruces1messages.add("Creepy Father Joseph: I was watching you from afar...");
+        cruces1messages.add("Would you like to stay for dinner? I made some blood sausages...");
+        cruces1messages.add("Here I will go grab some for you!");
+        cruces1messages.add("(He left his goblet behind.. There's an emerald mounted to its side!)");
+        cruces1messages.add("(Take it and run!)");
+        cruces1messages.add(" ");
 
         cruces2messages = new ArrayList<>();
-        cruces2messages.add("rum 2  message 1");
-        cruces2messages.add("rum 2  message 2");
-        cruces2messages.add("rum 2  message 3");
-        cruces2messages.add("rum 2  message 4");
-        cruces2messages.add("rum 2  message 5");
-        cruces2messages.add("rum 2  message 6");
+        cruces2messages.add("Bartender Carlos: Welcome to Double Cross Tavern.");
+        cruces2messages.add("I heard about your  travels... I'd be careful on this end of the island...");
+        cruces2messages.add("Those pirates are always preying on people like you.");
+        cruces2messages.add("I'd head into that closet back there if I were you...");
+        cruces2messages.add(" ");
+        cruces2messages.add(" ");
 
         cruces3messages = new ArrayList<>();
-        cruces3messages.add("rum 3  message 1");
-        cruces3messages.add("rum 3  message 2");
-        cruces3messages.add("rum 3  message 3");
-        cruces3messages.add("rum 3  message 4");
-        cruces3messages.add("rum 3  message 5");
-        cruces3messages.add("rum 3  message 6");
+        cruces3messages.add("Lodge Manager Francis: Excuse me sir, this is a private lodge.");
+        cruces3messages.add("You are not welcome here, unless you have a key.. which I doubt. ");
+        cruces3messages.add("South End Beach looks to be more your thing anyway..");
+        cruces3messages.add(" ");
+        cruces3messages.add(" ");
+        cruces3messages.add(" ");
 
         cruces4messages = new ArrayList<>();
-        cruces4messages.add("rum 4  message 1");
-        cruces4messages.add("rum 4  message 2");
-        cruces4messages.add("rum 4  message 3");
-        cruces4messages.add("rum 4  message 4");
-        cruces4messages.add("rum 4  message 5");
-        cruces4messages.add("rum 4  message 6");
+        cruces4messages.add("Old Shipmate Bill the Dreadful: Where the hell have you been??");
+        cruces4messages.add("Did you not get my letters? You're not safe here!");
+        cruces4messages.add("Take this key and head west. There is a hidden cavern on the coast.");
+        cruces4messages.add("Hide out in there until this start to die down...");
+        cruces4messages.add("Best of luck... now run!");
+        cruces4messages.add("");
 
         //clues
         cruces1Clues = new ArrayList<>();
-        cruces1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        cruces1Clues.add("rum1 Clue 1  message 2");
-        cruces1Clues.add("rum1 Clue 1  message 3");
-        cruces1Clues.add("rum1 Clue 1  message 4");
-        cruces1Clues.add("rum1 Clue 1  message 5");
-        cruces1Clues.add("rum1 Clue 1  message 6");
+        cruces1Clues.add("Clue:A dummy will lead you to the green..."); //91 characters across
+        cruces1Clues.add(" ");
+        cruces1Clues.add(" ");
+        cruces1Clues.add(" ");
+        cruces1Clues.add(" ");
+        cruces1Clues.add(" ");
 
         ////////////////////////////////////////////Isla de muerta
         muerta1messages = new ArrayList<>();

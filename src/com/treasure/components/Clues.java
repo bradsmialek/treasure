@@ -36,17 +36,17 @@ public class Clues{
                 messages = StoryLine.getbPearlClues();
                 break;
             case "Rum Runner Island":
-                if (sum == 66) {
+                if (sum == 58) {
                     messages = StoryLine.getRum1Clues();
                 }
                 break;
             case "Port Royal":
-                if (sum == 66) {
+                if (sum == 77) {
                     messages = StoryLine.getPortRoyal1Clues();
                 }
                 break;
             case "Isla De Cruces":
-                if (sum == 66) {
+                if (sum == 54) {
                     messages = StoryLine.getCruces1Clues();
                 }
                 break;

@@ -170,6 +170,29 @@ public class Island {
                         tiles.get(i).add(Tile.Z);
                         break;
 
+                    // STORE ITEMS
+                    case '=':
+                        tiles.get(i).add(Tile.SOAP);
+                        break;
+                    case '|':
+                        tiles.get(i).add(Tile.SWORD);
+                        break;
+                    case ',':
+                        tiles.get(i).add(Tile.APPLE);
+                        break;
+                    case ';':
+                        tiles.get(i).add(Tile.WHISKEY);
+                        break;
+                    case '}':
+                        tiles.get(i).add(Tile.BOW);
+                        break;
+                    case '[':
+                        tiles.get(i).add(Tile.CORN);
+                        break;
+                    case '"':
+                        tiles.get(i).add(Tile.XP);
+                        break;
+
                 }
             }
         }
@@ -234,7 +257,7 @@ public class Island {
         Island.islandNumber = islandNumber;
     }
 
-    public static String getIslandName(int islandNumber){ // TODO build out rest of islands
+    public static String getIslandName(int islandNumber){
         if (islandNumber == 0) {
             islandName = "Introduction";
         }
@@ -255,6 +278,9 @@ public class Island {
         }
         else if(islandNumber == 6) {
             islandName = "Treasure Island";
+        }
+        else if(islandNumber == 7) {
+            islandName = "Vendor";
         }
         return islandName;
     }

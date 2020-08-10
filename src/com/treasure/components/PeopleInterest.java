@@ -49,16 +49,16 @@ public class PeopleInterest  {
         }
         else if(island.equals("Rum Runner Island")){
             switch(sum) {
-                case 42:
+                case 98:
                     messages = StoryLine.getRum1messages();
                     break;
-                case 75:
+                case 87:
                     messages = StoryLine.getRum2messages();
                     break;
-                case 87:
+                case 75:
                     messages = StoryLine.getRum3messages();
                     break;
-                case 98: //
+                case 15: //
                     messages = StoryLine.getRum4messages();
                     break;
 

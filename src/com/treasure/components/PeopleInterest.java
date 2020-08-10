@@ -37,27 +37,26 @@ public class PeopleInterest  {
 
         ArrayList<String> messages = new ArrayList<>();
 
-        switch (island) {
-            case "Black Pearl":
-                messages = StoryLine.getbPearlMessages();
-                break;
-            case "Rum Runner Island":
-                switch (sum) {
-                    case 42:
-                        messages = StoryLine.getRum1messages();
-                        break;
-                    case 75:
-                        messages = StoryLine.getRum2messages();
-                        break;
-                    case 87:
-                        messages = StoryLine.getRum3messages();
-                        break;
-                    case 98: //
-                        messages = StoryLine.getRum4messages();
-                        break;
 
-                }
+        if(island.equals("Black Pearl")){
+            messages = StoryLine.getbPearlMessages();
+        }
+        else if(island.equals("Rum Runner Island")){
+            switch (sum) {
+                case 42:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 98: //
+                    messages = StoryLine.getRum4messages();
+                    break;
 
+            }
         }
         else if(island.equals("Port Royal")){
             switch(sum) {

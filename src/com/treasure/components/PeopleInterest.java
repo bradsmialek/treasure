@@ -5,6 +5,7 @@ import com.treasure.util.Directions;
 import com.treasure.util.StoryLine;
 
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class PeopleInterest  {
 
@@ -96,33 +97,43 @@ public class PeopleInterest  {
         }
         else if(island.equals("Isle De Muerta")){
             switch(sum) {
-                case 98:
-                    messages = StoryLine.getRum1messages();
+                case 99:
+                    messages = StoryLine.getMuerta1messages();
+                    Attributes.player.getSpecialMaps();
                     break;
-                case 87:
-                    messages = StoryLine.getRum2messages();
+                case 61:
+                    messages = StoryLine.getMuerta2messages();
                     break;
-                case 75:
-                    messages = StoryLine.getRum3messages();
+                case 58:
+                    messages = StoryLine.getMuerta3messages();
+                    Attributes.player.addsSpecialKey();
                     break;
-                case 15: //
-                    messages = StoryLine.getRum4messages();
+                case 48: //
+                    messages = StoryLine.getMuerta4messages();
                     break;
             }
         }
         else if(island.equals("Treasure Island")){
             switch(sum) {
-                case 98:
-                    messages = StoryLine.getRum1messages();
+                case 66:
+                    messages = StoryLine.getTreasure1messages();
+                    Attributes.player.addsSpecialKey();
                     break;
-                case 87:
-                    messages = StoryLine.getRum2messages();
+                case 63:
+                    messages = StoryLine.getTreasure2messages();
+                    Attributes.player.addsSpecialKey();
                     break;
-                case 75:
-                    messages = StoryLine.getRum3messages();
+                case 53:
+                    messages = StoryLine.getTreasure3messages();
+                    Attributes.player.addsSpecialKey();
                     break;
-                case 15: //
-                    messages = StoryLine.getRum4messages();
+                case 92: //
+                    messages = StoryLine.getTreasure4messages();
+                    Attributes.player.addsSpecialKey();
+                    Attributes.player.addsEmerald();
+                    Attributes.player.addsSpecialMaps();
+                    Attributes.player.addsGold(1000);
+                    Attributes.player.addsXP(1000);
                     break;
 
             }

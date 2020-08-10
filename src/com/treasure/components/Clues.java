@@ -51,7 +51,7 @@ public class Clues{
                 }
                 break;
             case "Isle De Muerta":
-                if (sum == 66) {
+                if (sum == 50) {
                     messages = StoryLine.getMuerta1Clues();
                 }
                 break;

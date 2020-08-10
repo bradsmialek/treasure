@@ -21,20 +21,25 @@ public class Entity {
     protected int nextLevel = 50;
     protected int maxHealth;
 
+    protected int str;//---------------------------------------------------------------------------------------------TODO
+    protected int def;//
+
 
     //Character and Pirate
-    protected Entity(int x, int y, int health) {
+    protected Entity(int x, int y, int health, int str, int def) {
 
         this.setPos(x, y);
         this.health=health;
         this.maxHealth=health;
+        this.str=str;
+        this.def=def;
     }
-    protected Entity(int x, int y, int health, int number) {
-
-        this.setpirPos(x, y);
-        this.pirhealth=health;
-        this.number = number;
-    }
+//    protected Entity(int x, int y, int health, int number) {
+//
+//        this.setpirPos(x, y);
+//        this.pirhealth=health;
+//        this.number = number;
+//    }
 
     //SETTERS
 
@@ -84,6 +89,10 @@ public class Entity {
 
     public void damage(int dmg){
         this.health -= dmg;
+
+    }
+
+    public void damagePirate(int dmg){
         this.pirhealth -= dmg;
     }
 

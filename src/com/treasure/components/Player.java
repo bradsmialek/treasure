@@ -15,7 +15,7 @@ public class Player extends Entity {
 
 
     public Player(int x, int y) {
-        super(x, y, 20);
+        super(x, y, 100, 1, 1);
         this.gold=0;
         this.alive=true;
         System.out.println("PLAYER CLASS: CREATING PLAYER AT "+x+ " "+y);

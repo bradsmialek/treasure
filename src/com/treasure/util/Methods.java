@@ -16,7 +16,7 @@ public class Methods {
     private static String message5 = " ";
     private static String message6 = " ";
     private static boolean yesNo = false;
-    public static Directions direction;
+
 
     public static void initializeTiles(){
 
@@ -29,7 +29,7 @@ public class Methods {
                         Attributes.player.setPos(x, y);
                         break;
                     case PIRATE:
-                        Attributes.pirates.add(new Pirate("pirate", x, y, 5, x)); // TODO make strength and or defense
+                        Attributes.pirates.add(new Pirate("pirate", x, y, 10, 2, 2)); // TODO make strength and or defense
                         break;
 //                    case FRIENDLY:
 //                        Attributes.friendlys.add(new Friendly("Friendly", x, y));  //  maybe??
@@ -132,14 +132,13 @@ public class Methods {
                 decided = Decision.OPEN_DOOR;
                 break; //Ask to open door
             case PIRATE:
-                Methods.fightPirate(dir);
-//                message = "Fight the pirate!?";
-//                message2 = "   [Y] Yes     [N] No";
-//                message3 = " ";
-//                message4 = " ";
-//                message5 = " ";
-//                message6 = " ";
-//                decided = Decision.FIGHT_PIRATE;
+                message = "Fight the pirate!?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                message4 = " ";
+                message5 = " ";
+                message6 = " ";
+                decided = Decision.FIGHT_PIRATE;
 
                 break; //Handles encounters with pirates
             case FRIENDLY:
@@ -235,7 +234,7 @@ public class Methods {
                 decided = Decision.WHISKEY;
                 break;
             case XP:
-                Attributes.player.addsXP(200);
+                Attributes.player.addsXP(50);
                 message = "You would you like to purchase XP points?";
                 message2 = "   [Y] Yes     [N] No";
                 message3 = " ";
@@ -383,11 +382,11 @@ public class Methods {
             message6 = " ";
         }
         else if(decided == Decision.FIGHT_PIRATE && yn) {
-            Methods.fightPirate(direction);
+            Methods.fightPirate(Attributes.player.getFacing());
 
         }
         else if (decided == Decision.FIGHT_PIRATE) {
-            message = "That pirate might have fucked you up...hahahaha. Good choice matey!!";
+            message = "That pirate might have messed you up. Good choice matey!!";
             message2 = " ";
             message3 = " ";
             message4 = " ";
@@ -769,8 +768,6 @@ public class Methods {
 
     public static void movePirates() {
         for(int i=0;i<Attributes.pirates.size();i++) {
-            System.out.println("pirate x:"+ Attributes.pirates.get(i).getx()+"y:"+ Attributes.pirates.get(i).gety());
-            System.out.println("player x:"+ Attributes.player.getx()+"y:"+ Attributes.player.gety());
             Attributes.pirates.get(i).randomMove();
         }
     }
@@ -791,29 +788,29 @@ public class Methods {
         }
 
         for(int i=0;i<Attributes.pirates.size();i++) {
-//            System.out.println("pirate array size: "+Attributes.pirates.size());
-//            System.out.println("pirate in array: "+Attributes.pirates.get(i).getpirx() + ", "+Attributes.pirates.get(i).getpiry() );
-//            System.out.println("character: "+Attributes.player.getx() + ", "+Attributes.player.gety() );
-//            System.out.println("new pirate x and y: "+pirateX+ ", " + pirateY );
-            if(Attributes.pirates.get(i).getpirx() == pirateX && Attributes.pirates.get(i).getpiry() == pirateY) {
-//                float playerAttack = Attributes.player.getStr()-(Attributes.pirates.get(i).getDef()/10)*Attributes.player.getStr();//--------------------TODO
-//                float pirateAttck = Attributes.pirates.get(i).getStr()-(Attributes.player.getDef()/10)*Attributes.pirates.get(i).getStr();//--------------------TODO
-                Attributes.pirates.get(i).damage(3);
+            if(Attributes.pirates.get(i).getx() == pirateX && Attributes.pirates.get(i).gety() == pirateY) {
+
+
+                Attributes.pirates.get(i).damagePirate(5);
+                System.out.println(Attributes.pirates.get(i).getName());
                 Attributes.player.damage(3);
                 System.out.println(Attributes.pirates.get(i).getpirHealth());
-                message2 = "You attacked the pirate and left him with "+Attributes.pirates.get(i).getpirHealth()+" HP!";
-                message3 = "The pirate attacked you!";
+                message = "You dealt "+Attributes.pirates.get(i).getpirHealth()+" DMG!";
+                message2 = "The pirate attacked you!";
+                message3 = "";
+                message4 = " ";
             }
         }
     }
 
     public static void checkIsDead() {
         if(Attributes.player.getHealth()<=0) {
+            Attributes.player.setDead();
             message = "You died!";
             message2 = "Press any button to continue";
             message3 = " ";
             message4 = " ";
-            Attributes.player.setDead();
+
             Attributes.currentIsland = new Island(0);
             Attributes.currentMap = new Maps(0);
             Methods.initializeTiles();

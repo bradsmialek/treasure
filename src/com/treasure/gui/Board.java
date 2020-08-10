@@ -40,8 +40,6 @@ public class Board extends JPanel
         g.drawRoundRect(5, Attributes.windowHeight - 340, Attributes.windowWidth - 15, Attributes.windowHeight - 700, 5, 5);
 
 
-
-
         //MAP
         g.setColor(Color.lightGray);
         try {
@@ -178,32 +176,32 @@ public class Board extends JPanel
                     Attributes.player.setFacing(Directions.UP);
                     Methods.playerHandler(Directions.UP);
                     Attributes.currentIsland.posUpdate();
-//                    Methods.movePirates();
-//                    Attributes.currentIsland.posPirateUpdate();
+                    Methods.movePirates();
+                    Attributes.currentIsland.posPirateUpdate();
                     break;
                 case KeyEvent.VK_A:
                 case KeyEvent.VK_LEFT:
                     Attributes.player.setFacing(Directions.LEFT);
                     Methods.playerHandler(Directions.LEFT);
                     Attributes.currentIsland.posUpdate();
-//                    Methods.movePirates();
-//                    Attributes.currentIsland.posPirateUpdate();
+                    Methods.movePirates();
+                    Attributes.currentIsland.posPirateUpdate();
                     break;
                 case KeyEvent.VK_S:
                 case KeyEvent.VK_DOWN:
                     Attributes.player.setFacing(Directions.DOWN);
                     Methods.playerHandler(Directions.DOWN);
                     Attributes.currentIsland.posUpdate();
-//                    Methods.movePirates();
-//                    Attributes.currentIsland.posPirateUpdate();
+                    Methods.movePirates();
+                    Attributes.currentIsland.posPirateUpdate();
                     break;
                 case KeyEvent.VK_D:
                 case KeyEvent.VK_RIGHT:
                     Attributes.player.setFacing(Directions.RIGHT);
                     Methods.playerHandler(Directions.RIGHT);
                     Attributes.currentIsland.posUpdate();
-//                    Methods.movePirates();
-//                    Attributes.currentIsland.posPirateUpdate();
+                    Methods.movePirates();
+                    Attributes.currentIsland.posPirateUpdate();
                     break;
                 case KeyEvent.VK_Y:
                     Attributes.routeCommand(true);

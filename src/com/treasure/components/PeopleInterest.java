@@ -41,21 +41,27 @@ public class PeopleInterest  {
 
         if(island.equals("Black Pearl")){
             messages = StoryLine.getbPearlMessages();
+            Attributes.player.addsXP(10);
         }
         else if(island.equals("Rum Runner Island")){
             switch (sum) {
                 case 42:
                     messages = StoryLine.getRum1messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 75:
                     messages = StoryLine.getRum2messages();
                     Attributes.player.addsSpecialMaps();
+                    Attributes.player.addsXP(20);
                     break;
                 case 87:
                     messages = StoryLine.getRum3messages();
+                    Attributes.player.addsSpecialKey();
+                    Attributes.player.addsXP(20);
                     break;
                 case 98: //
                     messages = StoryLine.getRum4messages();
+                    Attributes.player.addsXP(10);
                     break;
 
             }
@@ -64,16 +70,20 @@ public class PeopleInterest  {
             switch(sum) {
                 case 58:
                     messages = StoryLine.getPortRoyal1messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 67:
                     messages = StoryLine.getPortRoyal2messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 60:
                     messages = StoryLine.getPortRoyal3messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 77: //
                     messages = StoryLine.getPortRoyal4messages();
                     Attributes.player.addsSpecialMaps();
+                    Attributes.player.addsXP(20);
                     break;
 
             }
@@ -84,16 +94,20 @@ public class PeopleInterest  {
                     messages = StoryLine.getCruces1messages();
                     Attributes.player.addsEmerald();
                     Attributes.player.addsSpecialMaps();
+                    Attributes.player.addsXP(50);
                     break;
                 case 67:
                     messages = StoryLine.getCruces2messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 78:
                     messages = StoryLine.getCruces3messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 85: //
                     messages = StoryLine.getCruces4messages();
                     Attributes.player.addsSpecialKey();
+                    Attributes.player.addsXP(20);
                     break;
 
             }
@@ -103,16 +117,20 @@ public class PeopleInterest  {
                 case 99:
                     messages = StoryLine.getMuerta1messages();
                     Attributes.player.getSpecialMaps();
+                    Attributes.player.addsXP(20);
                     break;
                 case 61:
                     messages = StoryLine.getMuerta2messages();
+                    Attributes.player.addsXP(10);
                     break;
                 case 58:
                     messages = StoryLine.getMuerta3messages();
                     Attributes.player.addsSpecialKey();
+                    Attributes.player.addsXP(20);
                     break;
                 case 48: //
                     messages = StoryLine.getMuerta4messages();
+                    Attributes.player.addsXP(10);
                     break;
             }
         }
@@ -120,15 +138,15 @@ public class PeopleInterest  {
             switch(sum) {
                 case 66:
                     messages = StoryLine.getTreasure1messages();
-                    Attributes.player.addsSpecialKey();
+
                     break;
                 case 63:
                     messages = StoryLine.getTreasure2messages();
-                    Attributes.player.addsSpecialKey();
+
                     break;
                 case 53:
                     messages = StoryLine.getTreasure3messages();
-                    Attributes.player.addsSpecialKey();
+
                     break;
                 case 92: //
                     messages = StoryLine.getTreasure4messages();

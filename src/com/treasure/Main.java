@@ -50,7 +50,8 @@ public class Main {
         Attributes.currentMap = new Maps(Maps.getMapNumber());
         System.out.println("\nMAIN CLASS: CREATING STORYLINE");
         StoryLine.createStoryline();
-        Music.playMusic("/Users/bradsmialek/tlg/java/projects/treasure/src/com/treasure/music/song1.wav");
+//        Music.playMusic("/Users/bradsmialek/tlg/java/projects/treasure/src/com/treasure/music/song1.wav");
+
 
         Attributes.player = new Player(19, 18);
         Attributes.pirates = new ArrayList<Pirate>();
@@ -58,5 +59,8 @@ public class Main {
         Attributes.clues = new ArrayList<Clues>();
 //        Attributes.friendlies = new ArrayList<Friend>();  maybe make friendlies move??
         Methods.initializeTiles();
+        String filename = ("yoho.mp3");
+        MP3 mp3 = new MP3(filename);
+//        mp3.playForever();
     }
 }

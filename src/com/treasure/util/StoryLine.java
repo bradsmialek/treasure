@@ -104,28 +104,28 @@ public class StoryLine {
 
         ////////////////////////////////////////////Port Royal
         portRoyal1messages = new ArrayList<>();
-        portRoyal1messages.add("rum 1  message 1");
-        portRoyal1messages.add("rum 1  message 2");
-        portRoyal1messages.add("rum 1  message 3");
-        portRoyal1messages.add("rum 1  message 4");
-        portRoyal1messages.add("rum 1  message 5");
-        portRoyal1messages.add("rum 1  message 6");
+        portRoyal1messages.add("Receptionist: Welcome to Royal Lodge. We only have one room left...");
+        portRoyal1messages.add("Since you are so desperate for a room, I will give this at a special rate.");
+        portRoyal1messages.add("But it's available at a good rate. I must warn you that...");
+        portRoyal1messages.add("It is poor condition right now and has no windows...");
+        portRoyal1messages.add("Oh yeah... We also had a recent death in the room...");
+        portRoyal1messages.add("Here is your key... Good luck...");
 
         portRoyal2messages = new ArrayList<>();
-        portRoyal2messages.add("rum 2  message 1");
-        portRoyal2messages.add("rum 2  message 2");
-        portRoyal2messages.add("rum 2  message 3");
-        portRoyal2messages.add("rum 2  message 4");
-        portRoyal2messages.add("rum 2  message 5");
-        portRoyal2messages.add("rum 2  message 6");
+        portRoyal2messages.add("Ghost of Captain Brad: Why would you dare come over this way??");
+        portRoyal2messages.add("Wait.. are you from the Black Pearl?! That boat is...");
+        portRoyal2messages.add("Never mind... here is an emerald for you.. ");
+        portRoyal2messages.add("But you must leave immediately and never come back!");
+//        portRoyal2messages.add("rum 2  message 5");
+//        portRoyal2messages.add("rum 2  message 6");
 
         portRoyal3messages = new ArrayList<>();
-        portRoyal3messages.add("rum 3  message 1");
-        portRoyal3messages.add("rum 3  message 2");
-        portRoyal3messages.add("rum 3  message 3");
-        portRoyal3messages.add("rum 3  message 4");
-        portRoyal3messages.add("rum 3  message 5");
-        portRoyal3messages.add("rum 3  message 6");
+        portRoyal3messages.add("Waitress: Are you the one who ordered the Rum and Drums??...");
+        portRoyal3messages.add("Right this way sir, I will take you to the lounge.");
+        portRoyal3messages.add("I cannot speak on it, but there is something for you here in the restaurant.");
+        portRoyal3messages.add("It is on you to find it and do what you need with what you find...");
+        portRoyal3messages.add("Once you find it... don't speak to anyone and I suggest you leave immediately...");
+        portRoyal3messages.add("The last time of you came here... it ended tragically... ");
 
         portRoyal4messages = new ArrayList<>();
         portRoyal4messages.add("rum 4  message 1");

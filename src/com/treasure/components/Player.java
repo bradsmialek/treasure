@@ -96,7 +96,6 @@ public class Player extends Entity {
     }
 
 
-
     public boolean isLiving() {
         return alive;
     }

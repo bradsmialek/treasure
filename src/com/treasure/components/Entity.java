@@ -71,10 +71,6 @@ public class Entity {
         return nextLevel;
     }
 
-//    public void gainXP(int amount) {
-//        this.xp+=amount;
-//        setLevel(this.xp);
-//    }
 
     public void setLevel(int xp){
 

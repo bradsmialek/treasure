@@ -9,12 +9,6 @@ import java.util.ArrayList;
 public class PeopleInterest  {
 
 
-//    public PeopleInterest(int posX, int posY) {
-//        super(posX, posY, 6);
-//        System.out.println("PEOPLEINTEREST CLASS: CREATING POI AT "+posX+ " "+posY);
-//
-//    }
-
     public static ArrayList<String> poiTree(Directions direction, String island) {
 
         int poiX=0, poiY=0;
@@ -47,11 +41,13 @@ public class PeopleInterest  {
         switch (island) {
             case "Black Pearl":
                 messages = StoryLine.getbPearlMessages();
+//                Attributes.player.addsSpecialKey();
                 break;
             case "Rum Runner Island":
                 switch (sum) {
                     case 98:
                         messages = StoryLine.getRum1messages();
+
                         break;
                     case 87:
                         messages = StoryLine.getRum2messages();

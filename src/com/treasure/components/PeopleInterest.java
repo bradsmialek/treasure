@@ -37,95 +37,96 @@ public class PeopleInterest  {
 
         ArrayList<String> messages = new ArrayList<>();
 
-
-        switch (island) {
-            case "Black Pearl":
-                messages = StoryLine.getbPearlMessages();
-//                Attributes.player.addsSpecialKey();
-                break;
-            case "Rum Runner Island":
-                switch (sum) {
-                    case 98:
-                        messages = StoryLine.getRum1messages();
-
-                        break;
-                    case 87:
-                        messages = StoryLine.getRum2messages();
-                        break;
-                    case 75:
-                        messages = StoryLine.getRum3messages();
-                        break;
-                    case 15: //
-                        messages = StoryLine.getRum4messages();
-                        break;
-
-                }
-                break;
-            case "Port Royal":  // need coordinates
-                switch (sum) {
-                    case 9:
-                        messages = StoryLine.getPortRoyal1messages();
-                        break;
-                    case 8:
-                        messages = StoryLine.getPortRoyal2messages();
-                        break;
-                    case 7:
-                        messages = StoryLine.getPortRoyal3messages();
-                        break;
-                    case 1: //
-                        messages = StoryLine.getPortRoyal4messages();
-                        break;
-                }
-                break;
-            case "Isla De Cruces":  // need coordinates
-                switch (sum) {
-                    case 8:
-                        messages = StoryLine.getCruces1messages();
-                        break;
-                    case 7:
-                        messages = StoryLine.getCruces2messages();
-                        break;
-                    case 2:
-                        messages = StoryLine.getCruces3messages();
-                        break;
-                    case 5: //
-                        messages = StoryLine.getCruces4messages();
-                        break;
-                }
-                break;
-            case "Isle De Muerta": // need coordinate
-                switch (sum) {
-                    case 8:
-                        messages = StoryLine.getMuerta1messages();
-                        break;
-                    case 87:
-                        messages = StoryLine.getMuerta2messages();
-                        break;
-                    case 75:
-                        messages = StoryLine.getMuerta3messages();
-                        break;
-                    case 5: //
-                        messages = StoryLine.getMuerta4messages();
-                        break;
-                }
-                break;
-            case "Treasure Island":   // need coordinates
-                switch (sum) {
-                    case 28:
-                        messages = StoryLine.getTreasure1messages();
-                        break;
-                    case 81:
-                        messages = StoryLine.getTreasure2messages();
-                        break;
-                    case 5:
-                        messages = StoryLine.getTreasure3messages();
-                        break;
-                    case 15: //
-                        messages = StoryLine.getTreasure4messages();
-                        break;
-                }
-                break;
+        if(island.equals("Black Pearl")){
+            messages = StoryLine.getbPearlMessages();
         }
+        else if(island.equals("Rum Runner Island")){
+            switch(sum) {
+                case 42:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 98: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+
+        }
+        else if(island.equals("Port Royal")){
+            switch(sum) {
+                case 58:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 67:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 60:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 77: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Isla De Cruces")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Isle De Muerta")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Treasure Island")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+
 
         return messages;
     }

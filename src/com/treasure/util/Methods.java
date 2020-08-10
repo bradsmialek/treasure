@@ -1,5 +1,6 @@
 package com.treasure.util;
 
+import com.sun.source.doctree.AttributeTree;
 import com.treasure.Attributes;
 import com.treasure.components.*;
 
@@ -226,6 +227,7 @@ public class Methods {
                 decided = Decision.WHISKEY;
                 break;
             case XP:
+                Attributes.player.addsXP(60);
                 message = "You would you like to purchase XP points?";
                 message2 = "   [Y] Yes     [N] No";
                 message3 = " ";

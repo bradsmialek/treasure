@@ -92,6 +92,7 @@ public class Player extends Entity {
 
     public void addsXP(int amount){
         xp+= amount;
+        setLevel(this.xp);
     }
 
 

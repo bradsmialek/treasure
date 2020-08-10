@@ -72,14 +72,14 @@ public class StoryLine {
         rum2messages = new ArrayList<>();
         rum2messages.add("Master Brewer: Watch out for that Store Manager, he hasn't been all there since");
         rum2messages.add("the last batch of pirates ransacked the distillery and drank all the rum...");
-        rum2messages.add("If you ever manage to get off this god forsaken island, take this map with you.");
+        rum2messages.add("If you ever manage to get off this godforsaken island, take this map with you.");
         rum2messages.add("Back in my day, I searched all over for treasure using this map and never had any luck...");
         rum2messages.add("Maybe you'll have better luck than I did!");
         rum2messages.add("Whatever you do, steer clear that abandoned distillery......");
 
         rum3messages = new ArrayList<>();
-        rum3messages.add("Ghost of Jack Dans: Finally! I have been waiting for an eternity for someone like you! ");
-        rum3messages.add("If you can manage to drink all of the rum here, you can have the secret key! ");
+        rum3messages.add("Ghost of Drunk Jack Dans: Finally! I have been waiting for an eternity for someone like you! ");
+        rum3messages.add("If you can manage to drink all of the rum here, you can have the key! ");
         rum3messages.add("No one has ever managed to finish!");
         rum3messages.add(" ");
         rum3messages.add(" ");
@@ -87,7 +87,7 @@ public class StoryLine {
 
         rum4messages = new ArrayList<>();
         rum4messages.add("Jojo: Long time no see my friend! I thought I'd never see you again!");
-        rum4messages.add("I heard that the ship you was lost at sea!");
+        rum4messages.add("I heard that the ship you were lost at sea!");
         rum4messages.add("Well I hope you aren't out looking for treasure again...");
         rum4messages.add("I want no part of whatever crazy adventure you're trying to drag me into!");
         rum4messages.add("Get out of here!!");
@@ -105,7 +105,7 @@ public class StoryLine {
         ////////////////////////////////////////////Port Royal
         portRoyal1messages = new ArrayList<>();
         portRoyal1messages.add("Receptionist: Welcome to Royal Lodge. We only have one room left...");
-        portRoyal1messages.add("Since you are so desperate for a room, I will give this at a special rate.");
+        portRoyal1messages.add("Since you are so desperate for a room, you can have this one");
         portRoyal1messages.add("But it's available at a good rate. I must warn you that...");
         portRoyal1messages.add("It is poor condition right now and has no windows...");
         portRoyal1messages.add("Oh yeah... We also had a recent death in the room...");
@@ -131,7 +131,7 @@ public class StoryLine {
         portRoyal4messages.add("Drunken Sailor Sam: Hi stranger, you must be new here.. wanna play some poker?");
         portRoyal4messages.add("I am usually not thi....(drunkenly falls) uh, I'm fine... ");
         portRoyal4messages.add("I only had like one drink, I'll be fine.");
-        portRoyal4messages.add("Here go buy me another beer (mistakenly hands over a special key)");
+        portRoyal4messages.add("Here go buy me another beer (mistakenly hands over a map)");
         portRoyal4messages.add("");
         portRoyal4messages.add("");
 
@@ -149,7 +149,7 @@ public class StoryLine {
         cruces1messages.add("Creepy Father Joseph: I was watching you from afar...");
         cruces1messages.add("Would you like to stay for dinner? I made some blood sausages...");
         cruces1messages.add("Here I will go grab some for you!");
-        cruces1messages.add("(He left his goblet behind.. There's an emerald mounted to its side!)");
+        cruces1messages.add("(He left his goblet and map behind.. There's an emerald mounted to its side!)");
         cruces1messages.add("(Take it and run!)");
         cruces1messages.add(" ");
 

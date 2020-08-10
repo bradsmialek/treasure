@@ -188,7 +188,7 @@ public class StoryLine {
 
         ////////////////////////////////////////////Isla de muerta
         muerta1messages = new ArrayList<>();
-        muerta1messages.add("");
+        muerta1messages.add("hahahaah");
         muerta1messages.add("rum 1  message 2");
         muerta1messages.add("rum 1  message 3");
         muerta1messages.add("rum 1  message 4");

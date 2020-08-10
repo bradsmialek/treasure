@@ -812,6 +812,9 @@ public class Methods {
             message3 = " ";
             message4 = " ";
             Attributes.player.setDead();
+            Attributes.currentIsland = new Island(0);
+            Attributes.currentMap = new Maps(0);
+            Methods.initializeTiles();
         }
     }
 }

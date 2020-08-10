@@ -34,23 +34,8 @@ public class Island {
                     case '#':
                         tiles.get(i).add(Tile.WALL);
                         break;
-                    case '+':
-                        tiles.get(i).add(Tile.PLUS);
-                        break;
-                    case '*':
-                        tiles.get(i).add(Tile.MAP);
-                        break;
                     case '@':
                         tiles.get(i).add(Tile.PLAYER);
-                        break;
-                    case '~':
-                        tiles.get(i).add(Tile.TILDE);
-                        break; // ?? don't know yet
-                    case ' ':
-                        tiles.get(i).add(Tile.SPACE);
-                        break;
-                    case '?':
-                        tiles.get(i).add(Tile.POI);
                         break;
                     case '^':
                         tiles.get(i).add(Tile.DOCK);
@@ -76,24 +61,50 @@ public class Island {
                     case 'f':
                         tiles.get(i).add(Tile.FRIENDLY);
                         break;
+                    case '&':
+                        tiles.get(i).add(Tile.BLACKJACK);
+                        break;
+                    case 'c':
+                        tiles.get(i).add(Tile.COINTOSS);
+                        break;
+                    case '$':
+                        tiles.get(i).add(Tile.LOTTERY);
+                        break;
                     case 'V':
                         tiles.get(i).add(Tile.VENDOR);
                         break;
-                    case 'C':
-                        tiles.get(i).add(Tile.COINTOSS);
+                    case '+':
+                        tiles.get(i).add(Tile.PLUS);
+                        break;
+                    case '*':
+                        tiles.get(i).add(Tile.MAP);
+                        break;
+                    case 'X':
+                        tiles.get(i).add(Tile.X);
+                        break;
+                    case '~':
+                        tiles.get(i).add(Tile.TILDE);
+                        break;
+                    case ' ':
+                        tiles.get(i).add(Tile.SPACE);
+                        break;
+                    case '?':
+                        tiles.get(i).add(Tile.POI);
                         break;
                     case '`':
                         tiles.get(i).add(Tile.CLUE);
                         break;
 
-                    // Full alphabet ; tiles for constructing island and map only; do nothing
+                    //Alphabet characters
                     case 'A':
                         tiles.get(i).add(Tile.A);
                         break;
                     case 'B':
-                        tiles.get(i).add(Tile.BLACKJACK);
+                        tiles.get(i).add(Tile.B);
                         break;
-                    // C for cointoss
+                    case 'C':
+                        tiles.get(i).add(Tile.C);
+                        break;
                     case 'D':
                         tiles.get(i).add(Tile.D);
                         break;
@@ -119,7 +130,7 @@ public class Island {
                         tiles.get(i).add(Tile.K);
                         break;
                     case 'L':
-                        tiles.get(i).add(Tile.LOTTERY);
+                        tiles.get(i).add(Tile.L);
                         break;
                     case 'M':
                         tiles.get(i).add(Tile.M);
@@ -152,15 +163,13 @@ public class Island {
                     case 'W':
                         tiles.get(i).add(Tile.W);
                         break;
-                    case 'X':
-                        tiles.get(i).add(Tile.X);
-                        break;
                     case 'Y':
                         tiles.get(i).add(Tile.Y);
                         break;
                     case 'Z':
                         tiles.get(i).add(Tile.Z);
                         break;
+
                 }
             }
         }

@@ -1,5 +1,7 @@
 package com.treasure.util;
 
+import com.treasure.components.Clues;
+
 import java.util.ArrayList;
 
 
@@ -13,9 +15,34 @@ public class StoryLine {
     private static ArrayList<String> rum4messages;
     private static ArrayList<String> rum1Clues;
 
+    private static ArrayList<String> portRoyal1messages;
+    private static ArrayList<String> portRoyal2messages;
+    private static ArrayList<String> portRoyal3messages;
+    private static ArrayList<String> portRoyal4messages;
+    private static ArrayList<String> portRoyal1Clues;
+
+    private static ArrayList<String> cruces1messages;
+    private static ArrayList<String> cruces2messages;
+    private static ArrayList<String> cruces3messages;
+    private static ArrayList<String> cruces4messages;
+    private static ArrayList<String> cruces1Clues;  // more clues on island
+
+    private static ArrayList<String> muerta1messages;
+    private static ArrayList<String> muerta2messages;
+    private static ArrayList<String> muerta3messages;
+    private static ArrayList<String> muerta4messages;
+    private static ArrayList<String> muerta1Clues;
+
+    private static ArrayList<String> treasure1messages;
+    private static ArrayList<String> treasure2messages;
+    private static ArrayList<String> treasure3messages;
+    private static ArrayList<String> treasure4messages;
+    private static ArrayList<String> treasure1Clues;
 
 
     public static void createStoryline(){
+
+        ////////////////////////////////////////////Black Pearl
         bPearlMessages = new ArrayList<>();
         bPearlMessages.add("black pearl 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
         bPearlMessages.add("black pearl 1  message 2");
@@ -24,6 +51,7 @@ public class StoryLine {
         bPearlMessages.add("black pearl 1  message 5");
         bPearlMessages.add("black pearl 1  message 6");
 
+        //clue
         bPearlClues = new ArrayList<>();
         bPearlClues.add("black pearl Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
         bPearlClues.add("black pearl Clue 1  message 2");
@@ -32,7 +60,7 @@ public class StoryLine {
         bPearlClues.add("black pearl Clue 1  message 5");
         bPearlClues.add("black pearl Clue 1  message 6");
 
-
+        ////////////////////////////////////////////Rum Runner Island
         rum1messages = new ArrayList<>();
         rum1messages.add("Store Manager: What are you doing in my distillery?! You are not welcome here! ");
         rum1messages.add("If you're looking for trouble, you have run into your worst nightmare!");
@@ -40,15 +68,6 @@ public class StoryLine {
 //        rum1messages.add("rum 1  message 4");
 //        rum1messages.add("rum 1  message 5");
 //        rum1messages.add("rum 1  message 6");
-
-        rum1Clues = new ArrayList<>();
-        rum1Clues.add("Clue: four times. 6 upside down is a 9 now. "); //91 characters across
-//        rum1Clues.add("rum1 Clue 1  message 2");
-//        rum1Clues.add("rum1 Clue 1  message 3");
-//        rum1Clues.add("rum1 Clue 1  message 4");
-//        rum1Clues.add("rum1 Clue 1  message 5");
-//        rum1Clues.add("rum1 Clue 1  message 6");
-
 
         rum2messages = new ArrayList<>();
         rum2messages.add("Master Brewer: Watch out for that Store Manager, he hasn't been all there since");
@@ -74,9 +93,184 @@ public class StoryLine {
         rum4messages.add("Get out of here!!");
 //        rum4messages.add("rum 4  message 6");
 
+        //clues
+        rum1Clues = new ArrayList<>();
+        rum1Clues.add("Clue: four times. 6 upside down is a 9 now."); //91 characters across
+        rum1Clues.add("rum1 Clue 1  message 2");
+        rum1Clues.add("rum1 Clue 1  message 3");
+        rum1Clues.add("rum1 Clue 1  message 4");
+        rum1Clues.add("rum1 Clue 1  message 5");
+        rum1Clues.add("rum1 Clue 1  message 6");
+
+        ////////////////////////////////////////////Port Royal
+        portRoyal1messages = new ArrayList<>();
+        portRoyal1messages.add("rum 1  message 1");
+        portRoyal1messages.add("rum 1  message 2");
+        portRoyal1messages.add("rum 1  message 3");
+        portRoyal1messages.add("rum 1  message 4");
+        portRoyal1messages.add("rum 1  message 5");
+        portRoyal1messages.add("rum 1  message 6");
+
+        portRoyal2messages = new ArrayList<>();
+        portRoyal2messages.add("rum 2  message 1");
+        portRoyal2messages.add("rum 2  message 2");
+        portRoyal2messages.add("rum 2  message 3");
+        portRoyal2messages.add("rum 2  message 4");
+        portRoyal2messages.add("rum 2  message 5");
+        portRoyal2messages.add("rum 2  message 6");
+
+        portRoyal3messages = new ArrayList<>();
+        portRoyal3messages.add("rum 3  message 1");
+        portRoyal3messages.add("rum 3  message 2");
+        portRoyal3messages.add("rum 3  message 3");
+        portRoyal3messages.add("rum 3  message 4");
+        portRoyal3messages.add("rum 3  message 5");
+        portRoyal3messages.add("rum 3  message 6");
+
+        portRoyal4messages = new ArrayList<>();
+        portRoyal4messages.add("rum 4  message 1");
+        portRoyal4messages.add("rum 4  message 2");
+        portRoyal4messages.add("rum 4  message 3");
+        portRoyal4messages.add("rum 4  message 4");
+        portRoyal4messages.add("rum 4  message 5");
+        portRoyal4messages.add("rum 4  message 6");
+
+        //clues
+        portRoyal1Clues = new ArrayList<>();
+        portRoyal1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
+        portRoyal1Clues.add("rum1 Clue 1  message 2");
+        portRoyal1Clues.add("rum1 Clue 1  message 3");
+        portRoyal1Clues.add("rum1 Clue 1  message 4");
+        portRoyal1Clues.add("rum1 Clue 1  message 5");
+        portRoyal1Clues.add("rum1 Clue 1  message 6");
+
+        ////////////////////////////////////////////Isla de Cruces
+        cruces1messages = new ArrayList<>();
+        cruces1messages.add("rum 1  message 1");
+        cruces1messages.add("rum 1  message 2");
+        cruces1messages.add("rum 1  message 3");
+        cruces1messages.add("rum 1  message 4");
+        cruces1messages.add("rum 1  message 5");
+        cruces1messages.add("rum 1  message 6");
+
+        cruces2messages = new ArrayList<>();
+        cruces2messages.add("rum 2  message 1");
+        cruces2messages.add("rum 2  message 2");
+        cruces2messages.add("rum 2  message 3");
+        cruces2messages.add("rum 2  message 4");
+        cruces2messages.add("rum 2  message 5");
+        cruces2messages.add("rum 2  message 6");
+
+        cruces3messages = new ArrayList<>();
+        cruces3messages.add("rum 3  message 1");
+        cruces3messages.add("rum 3  message 2");
+        cruces3messages.add("rum 3  message 3");
+        cruces3messages.add("rum 3  message 4");
+        cruces3messages.add("rum 3  message 5");
+        cruces3messages.add("rum 3  message 6");
+
+        cruces4messages = new ArrayList<>();
+        cruces4messages.add("rum 4  message 1");
+        cruces4messages.add("rum 4  message 2");
+        cruces4messages.add("rum 4  message 3");
+        cruces4messages.add("rum 4  message 4");
+        cruces4messages.add("rum 4  message 5");
+        cruces4messages.add("rum 4  message 6");
+
+        //clues
+        cruces1Clues = new ArrayList<>();
+        cruces1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
+        cruces1Clues.add("rum1 Clue 1  message 2");
+        cruces1Clues.add("rum1 Clue 1  message 3");
+        cruces1Clues.add("rum1 Clue 1  message 4");
+        cruces1Clues.add("rum1 Clue 1  message 5");
+        cruces1Clues.add("rum1 Clue 1  message 6");
+
+        ////////////////////////////////////////////Isla de muerta
+        muerta1messages = new ArrayList<>();
+        muerta1messages.add("rum 1  message 1");
+        muerta1messages.add("rum 1  message 2");
+        muerta1messages.add("rum 1  message 3");
+        muerta1messages.add("rum 1  message 4");
+        muerta1messages.add("rum 1  message 5");
+        muerta1messages.add("rum 1  message 6");
+
+        muerta2messages = new ArrayList<>();
+        muerta2messages.add("rum 2  message 1");
+        muerta2messages.add("rum 2  message 2");
+        muerta2messages.add("rum 2  message 3");
+        muerta2messages.add("rum 2  message 4");
+        muerta2messages.add("rum 2  message 5");
+        muerta2messages.add("rum 2  message 6");
+
+        muerta3messages = new ArrayList<>();
+        muerta3messages.add("rum 3  message 1");
+        muerta3messages.add("rum 3  message 2");
+        muerta3messages.add("rum 3  message 3");
+        muerta3messages.add("rum 3  message 4");
+        muerta3messages.add("rum 3  message 5");
+        muerta3messages.add("rum 3  message 6");
+
+        muerta4messages = new ArrayList<>();
+        muerta4messages.add("rum 4  message 1");
+        muerta4messages.add("rum 4  message 2");
+        muerta4messages.add("rum 4  message 3");
+        muerta4messages.add("rum 4  message 4");
+        muerta4messages.add("rum 4  message 5");
+        muerta4messages.add("rum 4  message 6");
+
+        //clues
+        muerta1Clues = new ArrayList<>();
+        muerta1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
+        muerta1Clues.add("rum1 Clue 1  message 2");
+        muerta1Clues.add("rum1 Clue 1  message 3");
+        muerta1Clues.add("rum1 Clue 1  message 4");
+        muerta1Clues.add("rum1 Clue 1  message 5");
+        muerta1Clues.add("rum1 Clue 1  message 6");
+
+        ////////////////////////////////////////////Treasure Island
+        treasure1messages = new ArrayList<>();
+        treasure1messages.add("rum 1  message 1");
+        treasure1messages.add("rum 1  message 2");
+        treasure1messages.add("rum 1  message 3");
+        treasure1messages.add("rum 1  message 4");
+        treasure1messages.add("rum 1  message 5");
+        treasure1messages.add("rum 1  message 6");
+
+        treasure2messages = new ArrayList<>();
+        treasure2messages.add("rum 2  message 1");
+        treasure2messages.add("rum 2  message 2");
+        treasure2messages.add("rum 2  message 3");
+        treasure2messages.add("rum 2  message 4");
+        treasure2messages.add("rum 2  message 5");
+        treasure2messages.add("rum 2  message 6");
+
+        treasure3messages = new ArrayList<>();
+        treasure3messages.add("rum 3  message 1");
+        treasure3messages.add("rum 3  message 2");
+        treasure3messages.add("rum 3  message 3");
+        treasure3messages.add("rum 3  message 4");
+        treasure3messages.add("rum 3  message 5");
+        treasure3messages.add("rum 3  message 6");
+
+        treasure4messages = new ArrayList<>();
+        treasure4messages.add("rum 4  message 1");
+        treasure4messages.add("rum 4  message 2");
+        treasure4messages.add("rum 4  message 3");
+        treasure4messages.add("rum 4  message 4");
+        treasure4messages.add("rum 4  message 5");
+        treasure4messages.add("rum 4  message 6");
+
+        //clues
+        treasure1Clues = new ArrayList<>();
+        treasure1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
+        treasure1Clues.add("rum1 Clue 1  message 2");
+        treasure1Clues.add("rum1 Clue 1  message 3");
+        treasure1Clues.add("rum1 Clue 1  message 4");
+        treasure1Clues.add("rum1 Clue 1  message 5");
+        treasure1Clues.add("rum1 Clue 1  message 6");
+
     }
-
-
 
     //GETTERS
 
@@ -114,6 +308,85 @@ public class StoryLine {
         return rum1Clues;
     }
 
+    public static ArrayList<String> getPortRoyal1messages() {
+        return portRoyal1messages;
+    }
+
+    public static ArrayList<String> getPortRoyal2messages() {
+        return portRoyal2messages;
+    }
+
+    public static ArrayList<String> getPortRoyal3messages() {
+        return portRoyal3messages;
+    }
+
+    public static ArrayList<String> getPortRoyal4messages() {
+        return portRoyal4messages;
+    }
+
+    public static ArrayList<String> getPortRoyal1Clues() {
+        return portRoyal1Clues;
+    }
+
+    public static ArrayList<String> getCruces1messages() {
+        return cruces1messages;
+    }
+
+    public static ArrayList<String> getCruces2messages() {
+        return cruces2messages;
+    }
+
+    public static ArrayList<String> getCruces3messages() {
+        return cruces3messages;
+    }
+
+    public static ArrayList<String> getCruces4messages() {
+        return cruces4messages;
+    }
+
+    public static ArrayList<String> getCruces1Clues() {
+        return cruces1Clues;
+    }
+
+    public static ArrayList<String> getMuerta1messages() {
+        return muerta1messages;
+    }
+
+    public static ArrayList<String> getMuerta2messages() {
+        return muerta2messages;
+    }
+
+    public static ArrayList<String> getMuerta3messages() {
+        return muerta3messages;
+    }
+
+    public static ArrayList<String> getMuerta4messages() {
+        return muerta4messages;
+    }
+
+    public static ArrayList<String> getMuerta1Clues() {
+        return muerta1Clues;
+    }
+
+    public static ArrayList<String> getTreasure1messages() {
+        return treasure1messages;
+    }
+
+    public static ArrayList<String> getTreasure2messages() {
+        return treasure2messages;
+    }
+
+    public static ArrayList<String> getTreasure3messages() {
+        return treasure3messages;
+    }
+
+    public static ArrayList<String> getTreasure4messages() {
+        return treasure4messages;
+    }
+
+    public static ArrayList<String> getTreasure1Clues() {
+        return treasure1Clues;
+    }
 
 
 

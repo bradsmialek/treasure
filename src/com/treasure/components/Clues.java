@@ -11,12 +11,6 @@ import java.util.ArrayList;
  */
 public class Clues{
 
-//    public Clues(int posX, int posY) {
-//        super(posX, posY, 'c');
-//        System.out.println("CLUES CLASS: CREATING CLUE AT "+posX+ " "+posY);
-//
-//    }
-
     public static ArrayList<String> clueTree(Directions direction, String island) {
 
         int clueX=0, clueY=0;
@@ -37,26 +31,35 @@ public class Clues{
 
         ArrayList<String> messages = new ArrayList<>();
 
-
-        if(island.equals("Black Pearl")){
-            messages = StoryLine.getbPearlClues();
-        }
-        else if(island.equals("Rum Runner Island")){   //TODO   get positions where clues are created and put them in here as the case.  Look in console for sum
-            switch(sum) {
-                case 66:
+        switch (island) {
+            case "Black Pearl":
+                messages = StoryLine.getbPearlClues();
+                break;
+            case "Rum Runner Island":
+                if (sum == 66) {
                     messages = StoryLine.getRum1Clues();
-                    break;
-                case 34:
-                    messages = StoryLine.getRum2messages();
-                    break;
-                case 25:
-                    messages = StoryLine.getRum3messages();
-                    break;
-                case 29:
-                    messages = StoryLine.getRum4messages();
-                    break;
-
-            }
+                }
+                break;
+            case "Port Royal":
+                if (sum == 66) {
+                    messages = StoryLine.getPortRoyal1Clues();
+                }
+                break;
+            case "Isla De Cruces":
+                if (sum == 66) {
+                    messages = StoryLine.getCruces1Clues();
+                }
+                break;
+            case "Isle De Muerta":
+                if (sum == 66) {
+                    messages = StoryLine.getMuerta1Clues();
+                }
+                break;
+            case "Treasure Island":
+                if (sum == 66) {
+                    messages = StoryLine.getTreasure1Clues();
+                }
+                break;
         }
 
         return messages;

@@ -64,6 +64,75 @@ public class PeopleInterest  {
 
             }
         }
+        else if(island.equals("Port Royal")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Isla De Cruces")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Isle De Muerta")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Treasure Island")){
+            switch(sum) {
+                case 98:
+                    messages = StoryLine.getRum1messages();
+                    break;
+                case 87:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 75:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 15: //
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+
 
         return messages;
     }

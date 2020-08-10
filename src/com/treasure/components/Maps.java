@@ -16,7 +16,7 @@ public class Maps {
 
         tiles = new ArrayList<ArrayList<Tile>>();
 
-        ArrayList<String> strs = FileManager.readIslandFile("src/com/treasure/maps/map"
+        ArrayList<String> strs = FileManager.readIslandFile("treasure/src/com/treasure/maps/map"
                 +mapNumber+".txt");
 
         for(int i = 0; i < strs.size()-1 ; i++) {

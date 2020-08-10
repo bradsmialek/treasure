@@ -7,6 +7,10 @@ public class Player extends Entity {
     private Directions facing;
     private int keys;
     private int gold;
+
+    private int specialKeys = 0;
+    private int specialMaps = 0;
+    private int emerald = 0;
     private boolean alive;
 
 
@@ -50,6 +54,30 @@ public class Player extends Entity {
             keys--;
     }
 
+    public void addsSpecialKey(){
+        specialKeys++;
+    }
+
+    public void addsSpecialMaps(){
+        specialMaps++;
+    }
+
+    public void addsEmerald(){
+        emerald++;
+    }
+
+    public int getSpecialKeys() {
+        return specialKeys;
+    }
+
+    public int getSpecialMaps() {
+        return specialMaps;
+    }
+
+    public int getEmerald() {
+        return emerald;
+    }
+
     public int getsGold() {
         return gold;
     }
@@ -65,6 +93,8 @@ public class Player extends Entity {
     public void addsXP(int amount){
         xp+= amount;
     }
+
+
 
     public boolean isLiving() {
         return alive;

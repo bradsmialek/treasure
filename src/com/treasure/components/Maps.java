@@ -166,10 +166,66 @@ public class Maps {
                         tiles.get(i).add(Tile.Z);
                         break;
 
+                        // STORE ITEMS
+                    case '=':
+                        tiles.get(i).add(Tile.SOAP);
+                        break;
+                    case '|':
+                        tiles.get(i).add(Tile.SWORD);
+                        break;
+                    case ',':
+                        tiles.get(i).add(Tile.APPLE);
+                        break;
+                    case ';':
+                        tiles.get(i).add(Tile.WHISKEY);
+                        break;
+                    case '}':
+                        tiles.get(i).add(Tile.BOW);
+                        break;
+                    case '[':
+                        tiles.get(i).add(Tile.CORN);
+                        break;
+                    case '"':
+                        tiles.get(i).add(Tile.XP);
+                        break;
+
+                    // NUMBERS
+                    case '1':
+                        tiles.get(i).add(Tile.ONE);
+                        break;
+                    case '2':
+                        tiles.get(i).add(Tile.TWO);
+                        break;
+                    case '3':
+                        tiles.get(i).add(Tile.THREE);
+                        break;
+                    case '4':
+                        tiles.get(i).add(Tile.FOUR);
+                        break;
+                    case '5':
+                        tiles.get(i).add(Tile.FIVE);
+                        break;
+                    case '6':
+                        tiles.get(i).add(Tile.SIX);
+                        break;
+                    case '7':
+                        tiles.get(i).add(Tile.SEVEN);
+                        break;
+                    case '8':
+                        tiles.get(i).add(Tile.EIGHT);
+                        break;
+                    case '9':
+                        tiles.get(i).add(Tile.NINE);
+                        break;
+                    case '0':
+                        tiles.get(i).add(Tile.ZERO);
+                        break;
+
                 }
             }
         }
     }
+
 
     //Gets the size of the floor on the y coordinate
     public int getHeight() {

@@ -22,7 +22,7 @@ public enum Tile {
     COINTOSS('C'),
     VENDOR('V'),
     A('A'),
-    B('B'),
+    BLACKJACK('B'),
     //C used for cointoss
     D('D'),
     E('E'),
@@ -32,7 +32,7 @@ public enum Tile {
     I('I'),
     J('J'),
     K('K'),
-    L('L'),
+    LOTTERY('L'),
     M('M'),
     N('N'),
     O('O'),

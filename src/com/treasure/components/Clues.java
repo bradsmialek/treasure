@@ -58,6 +58,57 @@ public class Clues{
 
             }
         }
+        else if(island.equals("Rum Runner Island")){   //TODO   get positions where clues are created and put them in here as the case.  Look in console for sum
+            switch(sum) {
+                case 66:
+                    messages = StoryLine.getRum1Clues();
+                    break;
+                case 34:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 25:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 29:
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Rum Runner Island")){   //TODO   get positions where clues are created and put them in here as the case.  Look in console for sum
+            switch(sum) {
+                case 66:
+                    messages = StoryLine.getRum1Clues();
+                    break;
+                case 34:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 25:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 29:
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
+        else if(island.equals("Rum Runner Island")){   //TODO   get positions where clues are created and put them in here as the case.  Look in console for sum
+            switch(sum) {
+                case 66:
+                    messages = StoryLine.getRum1Clues();
+                    break;
+                case 34:
+                    messages = StoryLine.getRum2messages();
+                    break;
+                case 25:
+                    messages = StoryLine.getRum3messages();
+                    break;
+                case 29:
+                    messages = StoryLine.getRum4messages();
+                    break;
+
+            }
+        }
 
         return messages;
     }

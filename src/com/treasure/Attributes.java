@@ -16,7 +16,7 @@ public class Attributes {
     public static Island currentIsland;
     public static Maps currentMap;
     public static Player player;
-    public static Vendor vendorItems = Vendor.getInstance();
+//    public static Vendor vendorItems = Vendor.getInstance();
     public static SubGames currentSubGame = SubGames.NONE;
 
     public static ArrayList<Pirate> pirates;

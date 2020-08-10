@@ -147,13 +147,15 @@ public class Methods {
                 locationDecided = LocationDecision.LOCATION;
                 break;
             case VENDOR:
-                message = "What would you like to Buy?";
-                message2 = "[a]  [r]  []  []  []";
-                message3 = "[a]  [r]  []  []  []";
-                message4 = "[a]  [r]  []  []  []";
-                message5 = "[a]  [r]  []  []  []";
+                message = "Please explore my store. My stock is low.";
+                message2 = " ";
+                message3 = " ";
+                message4 = " ";
+                message5 = " ";
                 message6 = " ";
-                vendorDecided = VendorDecision.VENDOR_DECISION;
+                Attributes.currentMap = new Maps(7);
+                Attributes.currentIsland = new Island(7);
+                Methods.initializeTiles();
                 break;
             case POI:
                 message = "Would you like to talk?";
@@ -186,9 +188,51 @@ public class Methods {
                 message2 = "   [Y] Yes     [N] No";
                 message3 = " ";
                 decided = Decision.PLAY_LOTTERY;
-            default:
-                System.out.println("Where are you???");
                 break;
+            case SOAP:
+                message = "You would you like to purchase soap you dirty pirate?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.SOAP;
+                break;
+            case SWORD:
+                message = "You would you like to purchase a trusty sword?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.SWORD;
+                break;
+            case BOW:
+                message = "You would you like to purchase this fine bow?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.BOW;
+                break;
+            case APPLE:
+                message = "You would you like to purchase a delicious apple?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.APPLE;
+                break;
+            case CORN:
+                message = "You would you like to purchase some rare corn?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.CORN;
+                break;
+            case WHISKEY:
+                message = "You would you like to purchase whiskey to drink your worries away?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.WHISKEY;
+                break;
+            case XP:
+                message = "You would you like to purchase XP points?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.XP;
+                break;
+            default:
+                System.out.println("Where are you??? You must be lost!");
         }
     }
 
@@ -196,11 +240,6 @@ public class Methods {
     private enum LocationDecision {
         LOCATION,
         NOWHERE;
-    }
-
-    private enum VendorDecision {
-        NONE,
-        VENDOR_DECISION;
     }
 
     private enum Decision {
@@ -214,7 +253,14 @@ public class Methods {
         FIGHT_PIRATE, // drops stuff
         TALK,
         PLAY_BLACKJACK,
-        PLAY_LOTTERY;
+        PLAY_LOTTERY,
+        CORN,
+        WHISKEY,
+        SWORD,
+        APPLE,
+        BOW,
+        XP,
+        SOAP;
     }
 
     private enum CoinTossDecision {
@@ -222,11 +268,7 @@ public class Methods {
         SIDEOFCOIN;
     }
     private static LocationDecision locationDecided = LocationDecision.NOWHERE;
-
-    private static VendorDecision vendorDecided = VendorDecision.NONE;
-
     private static CoinTossDecision tossDecision = CoinTossDecision.NONE;
-
     private static Decision decided = Decision.NONE;
 
 

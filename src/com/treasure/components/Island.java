@@ -20,7 +20,7 @@ public class Island {
 
         tiles = new ArrayList<ArrayList<Tile>>();
 
-        ArrayList<String> strs = FileManager.readIslandFile("src/com/treasure/islands/island"
+        ArrayList<String> strs = FileManager.readIslandFile("treasure/src/com/treasure/islands/island"
                 +islandNumber+".txt");
 
         for(int i = 0; i < strs.size()-1 ; i++) {

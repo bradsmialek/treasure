@@ -16,17 +16,20 @@ public class RandomMessage {
 
     public static String [] messageArr =
             {
-            "'Take a swig of this here rum, ye scumbag!'",
-            "'I found this Gold just laying around...'",
-            "'I'll be taking that Gold ye got there!'",
-            "'*Hiccup* I think me be a bit drunk...'",
-            "'Ahoy ye matey!'",
-            "'Bloody pirates...'",
-            "'Off with ye!'",
-            "'Yo-ho and a bottle of rum!'",
-            "'I heard one of ye shipmates has scurvy...'",
-            "'Have ye seen me eye?'",
-            "'Ever wonder why we have no free will... Uhhh, Oops! I mean Arghh!'"
+
+                    "'Take a swig of this here rum, ye scumbag!'",
+                    "'I found this Gold just laying around...'",
+                    "'I'll be taking that Gold ye got there!'",
+                    "'Did ye know ye can gamble at Isla de Muerta?'",
+                    "'*Hiccup* I think me be a bit drunk...'",
+                    "'Ahoy ye matey!'",
+                    "'Bloody pirates...'",
+                    "'Off with ye!'",
+                    "'Yo-ho and a bottle of rum!'",
+                    "'I heard one of ye shipmates has scurvy...'",
+                    "'Have ye seen me eye?'",
+                    "'Ever wonder why we have no free will... Uhhh, Oops! I mean Arghh!'"
+
             };
 
     public static String randomMessageGenerator() throws IOException {
@@ -110,6 +113,11 @@ public class RandomMessage {
                 Methods.setMessage3("...");
                 Methods.setMessage4("I guess he wasn't so friendly after all...");
             }
+        }
+        else if (rMessage.equals(messageArr[3])) {
+            Methods.setMessage2("'Just walk up to the c, &, or $ at the Saloon!'");
+            Methods.setMessage3("'That BlackJack dealer can be a scoundrel sometimes though...'");
+            Methods.setMessage4(" ");
         }
 
         else {

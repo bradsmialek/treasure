@@ -144,12 +144,10 @@ public class Board extends JPanel
             g.drawString("Current Location: " + Island.getIslandName(Island.getIslandNumber()), 800, 285);
 
             g.drawString("Special Items: ", 1200, 50);
-            g.drawString("Keys: 0/3", 1200, 90); //+Attributes.player.getsSpecialKeys()  --------------TODO
-            // 0/3
-            g.drawString("Emerald: 0/1", 1200, 120); // +Attributes.player.getsEmerald() ---------------TODO
-            // 0/1
-            g.drawString("Maps: 0/4", 1200, 150); // +Attributes.player.getsEmerald() ---------------TODO
-            // 0/4
+            g.drawString("Keys: "+ Attributes.player.getSpecialKeys()+"/3", 1200, 90);
+            g.drawString("Emerald: "+Attributes.player.getEmerald()+"/1", 1200, 120);
+            g.drawString("Maps: "+Attributes.player.getSpecialMaps()+"/4", 1200, 150);
+
 
         } catch (Exception drawStatsError) {
             System.out.println("Something went wrong while we were drawing Player stats");

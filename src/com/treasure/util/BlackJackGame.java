@@ -47,22 +47,22 @@ public class BlackJackGame {
         int dealer_total = dealer_random1 + dealer_random2;
         boolean hidden = Math.random() < 0.5; // to decide whether to hide one card or not
         if (player_total == 21) {
-            Methods.setMessage("Blackjack! Player Wins!");
+            Methods.setMessage("Blackjack!  Player Wins!");
             return;
         } else {
             System.out.println();
-            System.out.println("hand1");
-            Methods.setMessage("You get a: " + player_random1 + " and a: " + player_random2 + " Your total is: " + player_total);
-            if (hidden == true) {
-                Methods.setMessage2("The dealer has a " + dealer_random1 + " showing and a hidden card. His total is hidden too");
+//            System.out.println("hand1");
+            Methods.setMessage("Player      " + "["+ player_random1 + "]" + "  [" + player_random2 + "]    Total  " + player_total);
+            if (hidden) {
+                Methods.setMessage2("Dealer      " + "["+dealer_random1 + "]  [  ] ");
             } else {
-                Methods.setMessage2("The dealer has a " + dealer_random1 + " showing  and a " + dealer_random2 + ". Dealer Total is: " + dealer_total);
+                Methods.setMessage2("Dealer       " + "["+dealer_random1 + "]" + "  ["+dealer_random2 + "]    Total  " + dealer_total);
                 if (dealer_total == 21) {
-                    Methods.setMessage3("Blackjack! Dealer Wins!");
+                    Methods.setMessage3("Blackjack!  Dealer Wins!");
                     return;
                 }
             }
-            Methods.setMessage3("Would you like to Hit[Y] or Stay[N]");
+            Methods.setMessage3("Would you like to Hit [Y] or Stay [N]");
         }
     }
 
@@ -95,7 +95,7 @@ public class BlackJackGame {
             }
             player_total = player_total + player_random3;
 
-            Methods.setMessage("You drew a: " + player_random3 + ". Your new total is: " + player_total);
+            Methods.setMessage("Player      " + "["+ player_random1 + "]" + "  [" + player_random2 + "]  ["+ player_random3+"]    Total   " + player_total);
             if (player_total > 21) {
                 endGame(!PLAYER_WINS);
                 return;
@@ -103,7 +103,7 @@ public class BlackJackGame {
                 endGame(PLAYER_WINS);
                 return;
             }
-            Methods.setMessage3("Would you like to Hit[Y] or Stay[N]");
+            Methods.setMessage3("Would you like to Hit [Y] or Stay [N]");
 
         } else {
             System.out.println("Player stayed next hand");
@@ -111,18 +111,18 @@ public class BlackJackGame {
             while (dealer_random3 >= 12 || dealer_random3 < 3) {
                 dealer_random3 = (int) (Math.random() * 100);
             }
-            Methods.setMessage("Okay, dealer's turn... His hidden card was: " + dealer_random2 + " and his total was: " + dealer_total);
+            Methods.setMessage("Dealer       " + "["+dealer_random1 + "]  [" + dealer_random2 + "]     Total   " + dealer_total);
 
             if (dealer_total > 16) {
                 Methods.setMessage2("Dealer stays.");
             } else {
                 while (dealer_total <= 16) {
                     dealer_total = dealer_total + dealer_random3;
-                    Methods.setMessage2("Dealer chooses to hit... He draws a: " + dealer_random3 + ". His total is: " + dealer_total);
+                    Methods.setMessage2("Dealer hits... He draws a  " + dealer_random3 + ". His total is  " + dealer_total);
                 }
             }
 
-            Methods.setMessage3("Dealer's total is: " + dealer_total + ". Your total is: " + player_total);
+            Methods.setMessage3("Dealer's total is  " + dealer_total + ". Your total is  " + player_total);
             if ((player_total > dealer_total && player_total < 21) || dealer_total > 21) {
                 endGame(PLAYER_WINS);
                 return;
@@ -134,8 +134,8 @@ public class BlackJackGame {
     }
 
     public static void endGame(boolean playerWins) {
-        Methods.setMessage2(playerWins ? "YOU WIN!" : "Busted! Dealer wins!");
-        Methods.setMessage3("Would you like to play again [y] or [N]");
+        Methods.setMessage2(playerWins ? "YOU WIN!" : "Busted!  Dealer wins!");
+        Methods.setMessage3("Would you like to play again [Y] or [N]");
         GAME_LOOP_IN_PROGRESS = false;
         if(playerWins) {
             Attributes.player.addsGold(2);

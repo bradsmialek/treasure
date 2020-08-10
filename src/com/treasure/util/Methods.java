@@ -72,8 +72,10 @@ public class Methods {
         //Handles the player movement
         switch(tile){
             case NOTHING:
+
                 Attributes.currentSubGame = SubGames.NONE;
                 decided = Decision.NONE;
+            
                 Attributes.player.move(dir);
                 // every time player moves previous displayed message will dissapear
                 message = " ";

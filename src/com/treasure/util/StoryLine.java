@@ -188,82 +188,82 @@ public class StoryLine {
 
         ////////////////////////////////////////////Isla de muerta
         muerta1messages = new ArrayList<>();
-        muerta1messages.add("");
-        muerta1messages.add("rum 1  message 2");
-        muerta1messages.add("rum 1  message 3");
-        muerta1messages.add("rum 1  message 4");
-        muerta1messages.add("rum 1  message 5");
-        muerta1messages.add("rum 1  message 6");
+        muerta1messages.add("Brandon Blackbeard: It's good to finally meet the legend from all of the stories and rumors.");
+        muerta1messages.add("It's quite a surprise that you have survived this long...");
+        muerta1messages.add("I don't think you'll last through this island, but here is a map to help you out...");
+        muerta1messages.add("You'll need to be on the look out for keys while you're here...");
+        muerta1messages.add("The whole island is locked down because of the damn plague that's going on around.");
+        muerta1messages.add("You'll need a key to get into most places... Good luck!...");
 
         muerta2messages = new ArrayList<>();
-        muerta2messages.add("rum 2  message 1");
-        muerta2messages.add("rum 2  message 2");
-        muerta2messages.add("rum 2  message 3");
-        muerta2messages.add("rum 2  message 4");
-        muerta2messages.add("rum 2  message 5");
-        muerta2messages.add("rum 2  message 6");
+        muerta2messages.add("Ghost of Captain Cutthroat: I am impressed by your bravery.It is a rare site");
+        muerta2messages.add("to have someone make it this deep into the graveyard.");
+        muerta2messages.add("I could kill you right now, but instead I will reward you for your bravery.");
+        muerta2messages.add("Just kidding, get the hell out of here before you piss me off!");
+        muerta2messages.add("");
+        muerta2messages.add("");
 
         muerta3messages = new ArrayList<>();
-        muerta3messages.add("rum 3  message 1");
-        muerta3messages.add("rum 3  message 2");
-        muerta3messages.add("rum 3  message 3");
-        muerta3messages.add("rum 3  message 4");
-        muerta3messages.add("rum 3  message 5");
-        muerta3messages.add("rum 3  message 6");
+        muerta3messages.add("Small Jean Copper: Thank you for talking to me! This plague has had me locked up for months!");
+        muerta3messages.add("This is my first night out in so long! Lets have a drink!!!");
+        muerta3messages.add("Hold my stuff while I go grab us some drinks!");
+        muerta3messages.add("(Another idiot left behind his valuables.)");
+        muerta3messages.add("(Take the keys)");
+        muerta3messages.add("");
 
         muerta4messages = new ArrayList<>();
-        muerta4messages.add("rum 4  message 1");
-        muerta4messages.add("rum 4  message 2");
-        muerta4messages.add("rum 4  message 3");
-        muerta4messages.add("rum 4  message 4");
-        muerta4messages.add("rum 4  message 5");
-        muerta4messages.add("rum 4  message 6");
+        muerta4messages.add("(You took too long!)");
+        muerta4messages.add("(Randal the Ruthless died of the plague while waiting for you to arrive!)");
+        muerta4messages.add("(He left a piece of an emerald wrapped in a mask behind for you.)");
+        muerta4messages.add("");
+        muerta4messages.add("");
+        muerta4messages.add("");
 
         //clues
         muerta1Clues = new ArrayList<>();
-        muerta1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        muerta1Clues.add("rum1 Clue 1  message 2");
-        muerta1Clues.add("rum1 Clue 1  message 3");
-        muerta1Clues.add("rum1 Clue 1  message 4");
-        muerta1Clues.add("rum1 Clue 1  message 5");
-        muerta1Clues.add("rum1 Clue 1  message 6");
+        muerta1Clues.add("The drunk French John has loose lips and something important for you."); //91 characters across
+        muerta1Clues.add("");
+        muerta1Clues.add("");
+        muerta1Clues.add("");
+        muerta1Clues.add("");
+        muerta1Clues.add("");
 
         ////////////////////////////////////////////Treasure Island
         treasure1messages = new ArrayList<>();
-        treasure1messages.add("rum 1  message 1");
-        treasure1messages.add("rum 1  message 2");
-        treasure1messages.add("rum 1  message 3");
-        treasure1messages.add("rum 1  message 4");
-        treasure1messages.add("rum 1  message 5");
-        treasure1messages.add("rum 1  message 6");
+        treasure1messages.add("Ghost of Frederick the Jinx: Why oh why would you bother me??");
+        treasure1messages.add("Everytime you annoying treasure hunters arrive... you die.");
+        treasure1messages.add("Take this key... go ahead. You wont last that night!!!");
+        treasure1messages.add("");
+        treasure1messages.add("");
+        treasure1messages.add("");
 
         treasure2messages = new ArrayList<>();
-        treasure2messages.add("rum 2  message 1");
-        treasure2messages.add("rum 2  message 2");
-        treasure2messages.add("rum 2  message 3");
-        treasure2messages.add("rum 2  message 4");
-        treasure2messages.add("rum 2  message 5");
-        treasure2messages.add("rum 2  message 6");
+        treasure2messages.add("Marvin Bloodbreathe: If you expect to find the treasure,:");
+        treasure2messages.add("You will need a lot more than just some keys and emeralds. ");
+        treasure2messages.add("You death is inevitable.");
+        treasure2messages.add("(Drops blood soaked key)");
+        treasure2messages.add("");
+        treasure2messages.add("");
 
         treasure3messages = new ArrayList<>();
-        treasure3messages.add("rum 3  message 1");
-        treasure3messages.add("rum 3  message 2");
-        treasure3messages.add("rum 3  message 3");
-        treasure3messages.add("rum 3  message 4");
-        treasure3messages.add("rum 3  message 5");
-        treasure3messages.add("rum 3  message 6");
+        treasure3messages.add("Jovan Blowheart: You may have what it takes to get into the monastery,");
+        treasure3messages.add("but that doesn't mean any of us will ever respect you!");
+        treasure3messages.add("(Throws key across the room.");
+        treasure3messages.add("");
+        treasure3messages.add("");
+        treasure3messages.add("");
 
         treasure4messages = new ArrayList<>();
-        treasure4messages.add("rum 4  message 1");
-        treasure4messages.add("rum 4  message 2");
-        treasure4messages.add("rum 4  message 3");
-        treasure4messages.add("rum 4  message 4");
-        treasure4messages.add("rum 4  message 5");
-        treasure4messages.add("rum 4  message 6");
+        treasure4messages.add("Zack Arrow: The legend has been fulfilled!! I am finally free for eternity.   :");
+        treasure4messages.add("I thought I would never get out of this dreaded place! ");
+        treasure4messages.add("Here is some priceless artifacts for your troubles.");
+        treasure4messages.add("I can't believe it's 2020 already, I'm sure life must be so great now!................");
+        treasure4messages.add("......................................................................................");
+        treasure4messages.add("......................................................................................");
 
         //clues
         treasure1Clues = new ArrayList<>();
-        treasure1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
+        treasure1Clues.add("3 keys to cross"); //91 characters across
         treasure1Clues.add("rum1 Clue 1  message 2");
         treasure1Clues.add("rum1 Clue 1  message 3");
         treasure1Clues.add("rum1 Clue 1  message 4");

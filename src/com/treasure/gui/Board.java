@@ -211,11 +211,11 @@ public class Board extends JPanel
 //                    Attributes.currentIsland.posPirateUpdate();
                     break;
                 case KeyEvent.VK_Y:
-                    Methods.decisionTree(true);
+                    Attributes.routeCommand(true);
                     Attributes.currentIsland.posUpdate();
                     break;
                 case KeyEvent.VK_N:
-                    Methods.decisionTree(false);
+                    Attributes.routeCommand(false);
                     Attributes.currentIsland.posUpdate();
                     break;
                 case KeyEvent.VK_2:

@@ -14,6 +14,7 @@ public class Methods {
     private static String message4 = " ";
     private static String message5 = " ";
     private static String message6 = " ";
+    private static boolean yesNo = false;
 
     public static void initializeTiles(){
 
@@ -173,7 +174,12 @@ public class Methods {
                 message = "You found a clue. Would you like to read it?";
                 message2 = "   [Y] Yes     [N] No";
                 decided = Decision.CLUE;
-
+                break;
+            case BLACKJACK:
+                message = "Would you like to play BlackJack for 1 Gold?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.PLAY_BLACKJACK;
                 break;
             default:
                 System.out.println("Where are you???");
@@ -201,7 +207,8 @@ public class Methods {
         OPEN_TREASURE, //TODO give random good thing
         CLUE,
         FIGHT_PIRATE, // drops stuff
-        TALK;
+        TALK,
+        PLAY_BLACKJACK;
     }
 
     private enum CoinTossDecision {
@@ -353,6 +360,15 @@ public class Methods {
             message5 = " ";
             message6 = " ";
         }
+        else if(decided == Decision.PLAY_BLACKJACK && yn) {
+            BlackJackGame.playBlackJack();
+
+        }
+        else if (decided == Decision.PLAY_BLACKJACK) {
+            message = "Alright then";
+            message2 = "";
+            message3 = " ";
+        }
 
         decided = Decision.NONE;
     }
@@ -429,6 +445,14 @@ public class Methods {
         }
         tossDecision = CoinTossDecision.NONE;
     }
+
+    public static void setMessage(String bjMessage) {message = bjMessage;}
+    public static void setMessage2(String bjMessage2) {message2 = bjMessage2;}
+    public static void setMessage3(String bjMessage3) {message3 = bjMessage3;}
+    public static void setMessage4(String bjMessage4) {message4 = bjMessage4;}
+    public static void setYn(boolean yn) {yesNo = yn;}
+
+    public static boolean getYesNo() {return yesNo;}
 
     // Returns messages
     public static String getMessage() {return message;}

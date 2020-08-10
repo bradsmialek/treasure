@@ -65,7 +65,7 @@ public class Maps {
                     case 'K':
                         tiles.get(i).add(Tile.K); break;
                     case 'L':
-                        tiles.get(i).add(Tile.L); break;
+                        tiles.get(i).add(Tile.LOTTERY); break;
                     case 'M':
                         tiles.get(i).add(Tile.M); break;
                     case 'N':

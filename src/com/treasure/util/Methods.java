@@ -181,6 +181,11 @@ public class Methods {
                 message3 = " ";
                 decided = Decision.PLAY_BLACKJACK;
                 break;
+            case LOTTERY:
+                message = "Would you like to play the Lottery for 50 Gold?";
+                message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                decided = Decision.PLAY_LOTTERY;
             default:
                 System.out.println("Where are you???");
                 break;
@@ -208,7 +213,8 @@ public class Methods {
         CLUE,
         FIGHT_PIRATE, // drops stuff
         TALK,
-        PLAY_BLACKJACK;
+        PLAY_BLACKJACK,
+        PLAY_LOTTERY;
     }
 
     private enum CoinTossDecision {
@@ -367,6 +373,21 @@ public class Methods {
         else if (decided == Decision.PLAY_BLACKJACK) {
             message = "Alright then";
             message2 = "";
+            message3 = " ";
+        }
+        else if (decided == Decision.PLAY_LOTTERY && yn) {
+            if (Attributes.player.getsGold() >= 50) {
+                LotteryGame.playLottery();
+            }
+            else {
+                message = "You don't have enough Gold...";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if (decided == Decision.PLAY_LOTTERY) {
+            message = "'I'd rather not lose me money...'";
+            message2 = " ";
             message3 = " ";
         }
 

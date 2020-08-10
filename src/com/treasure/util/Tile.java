@@ -32,7 +32,7 @@ public enum Tile {
     I('I'),
     J('J'),
     K('K'),
-    L('L'),
+    LOTTERY('L'),
     M('M'),
     N('N'),
     O('O'),

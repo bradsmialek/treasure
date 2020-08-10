@@ -239,6 +239,15 @@ public class Island {
         else if(islandNumber == 3) {
             islandName = "Port Royal";
         }
+        else if (islandNumber == 4){
+            islandName = "Isla De Cruces";
+        }
+        else if(islandNumber == 5) {
+            islandName = "Isle De Muerta";
+        }
+        else if(islandNumber == 6) {
+            islandName = "Treasure Island";
+        }
         return islandName;
     }
 }

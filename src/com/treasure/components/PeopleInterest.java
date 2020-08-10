@@ -49,6 +49,7 @@ public class PeopleInterest  {
                     break;
                 case 75:
                     messages = StoryLine.getRum2messages();
+                    Attributes.player.addsSpecialMaps();
                     break;
                 case 87:
                     messages = StoryLine.getRum3messages();
@@ -72,6 +73,7 @@ public class PeopleInterest  {
                     break;
                 case 77: //
                     messages = StoryLine.getPortRoyal4messages();
+                    Attributes.player.addsSpecialMaps();
                     break;
 
             }
@@ -81,6 +83,7 @@ public class PeopleInterest  {
                 case 20:
                     messages = StoryLine.getCruces1messages();
                     Attributes.player.addsEmerald();
+                    Attributes.player.addsSpecialMaps();
                     break;
                 case 67:
                     messages = StoryLine.getCruces2messages();

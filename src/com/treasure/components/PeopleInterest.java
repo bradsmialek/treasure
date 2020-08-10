@@ -9,12 +9,6 @@ import java.util.ArrayList;
 public class PeopleInterest  {
 
 
-//    public PeopleInterest(int posX, int posY) {
-//        super(posX, posY, 6);
-//        System.out.println("PEOPLEINTEREST CLASS: CREATING POI AT "+posX+ " "+posY);
-//
-//    }
-
     public static ArrayList<String> poiTree(Directions direction, String island) {
 
         int poiX=0, poiY=0;
@@ -43,7 +37,6 @@ public class PeopleInterest  {
 
         ArrayList<String> messages = new ArrayList<>();
 
-
         if(island.equals("Black Pearl")){
             messages = StoryLine.getbPearlMessages();
         }
@@ -63,6 +56,7 @@ public class PeopleInterest  {
                     break;
 
             }
+
         }
         else if(island.equals("Port Royal")){
             switch(sum) {

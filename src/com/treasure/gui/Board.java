@@ -226,6 +226,18 @@ public class Board extends JPanel
                     Methods.locationTree(3);
                     Attributes.currentIsland.posUpdate();
                     break;
+                case KeyEvent.VK_4:
+                    Methods.locationTree(4);
+                    Attributes.currentIsland.posUpdate();
+                    break;
+                case KeyEvent.VK_5:
+                    Methods.locationTree(5);
+                    Attributes.currentIsland.posUpdate();
+                    break;
+                case KeyEvent.VK_6:
+                    Methods.locationTree(6);
+                    Attributes.currentIsland.posUpdate();
+                    break;
                 case KeyEvent.VK_H:
                     Methods.coinTossTree("Heads");
                     Attributes.currentIsland.posUpdate();

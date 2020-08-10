@@ -4,7 +4,6 @@ import com.treasure.Attributes;
 import com.treasure.util.FileManager;
 import com.treasure.util.Tile;
 
-import java.io.File;
 import java.util.ArrayList;
 
 public class Island {
@@ -92,7 +91,7 @@ public class Island {
                         tiles.get(i).add(Tile.A);
                         break;
                     case 'B':
-                        tiles.get(i).add(Tile.B);
+                        tiles.get(i).add(Tile.BLACKJACK);
                         break;
                     // C for cointoss
                     case 'D':
@@ -120,7 +119,7 @@ public class Island {
                         tiles.get(i).add(Tile.K);
                         break;
                     case 'L':
-                        tiles.get(i).add(Tile.L);
+                        tiles.get(i).add(Tile.LOTTERY);
                         break;
                     case 'M':
                         tiles.get(i).add(Tile.M);
@@ -238,6 +237,15 @@ public class Island {
         }
         else if(islandNumber == 3) {
             islandName = "Port Royal";
+        }
+        else if (islandNumber == 4){
+            islandName = "Isla De Cruces";
+        }
+        else if(islandNumber == 5) {
+            islandName = "Isle De Muerta";
+        }
+        else if(islandNumber == 6) {
+            islandName = "Treasure Island";
         }
         return islandName;
     }

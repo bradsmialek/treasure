@@ -211,11 +211,11 @@ public class Board extends JPanel
 //                    Attributes.currentIsland.posPirateUpdate();
                     break;
                 case KeyEvent.VK_Y:
-                    Methods.decisionTree(true);
+                    Attributes.routeCommand(true);
                     Attributes.currentIsland.posUpdate();
                     break;
                 case KeyEvent.VK_N:
-                    Methods.decisionTree(false);
+                    Attributes.routeCommand(false);
                     Attributes.currentIsland.posUpdate();
                     break;
                 case KeyEvent.VK_2:
@@ -224,6 +224,18 @@ public class Board extends JPanel
                     break;
                 case KeyEvent.VK_3:
                     Methods.locationTree(3);
+                    Attributes.currentIsland.posUpdate();
+                    break;
+                case KeyEvent.VK_4:
+                    Methods.locationTree(4);
+                    Attributes.currentIsland.posUpdate();
+                    break;
+                case KeyEvent.VK_5:
+                    Methods.locationTree(5);
+                    Attributes.currentIsland.posUpdate();
+                    break;
+                case KeyEvent.VK_6:
+                    Methods.locationTree(6);
                     Attributes.currentIsland.posUpdate();
                     break;
                 case KeyEvent.VK_H:

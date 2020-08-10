@@ -1,6 +1,7 @@
 package com.treasure.gui;
 
 import com.treasure.Attributes;
+import com.treasure.Main;
 import com.treasure.components.Island;
 import com.treasure.util.Directions;
 import com.treasure.util.Methods;
@@ -86,7 +87,7 @@ public class Board extends JPanel
                         g.setColor(Color.MAGENTA);
                         g.drawString("" + Attributes.currentIsland.getTileChar(j, i), x, y);
                         g.setColor(Color.orange);
-                    } else if (Attributes.currentIsland.getTileChar(j, i) == '+') {
+                    }else if (Attributes.currentIsland.getTileChar(j, i) == '+') {
                         g.setColor(Color.lightGray);
                         g.drawString("" + Attributes.currentIsland.getTileChar(j, i), x, y);
                         g.setColor(Color.orange);
@@ -123,10 +124,6 @@ public class Board extends JPanel
         } catch (Exception paintIslandError) {
             System.out.println("Something went wrong while we were painting the island");
         }
-
-        //Legend of characters  TODO
-        //^ ship
-        //P pirate ... etc
 
 
         //STATS
@@ -172,7 +169,7 @@ public class Board extends JPanel
 
     @Override
     public void keyPressed(KeyEvent arg0) {
-//        if (Attributes.player.isLiving()) {
+        if (Attributes.player.isLiving()) {
 
         try {
             switch (arg0.getKeyCode()) {
@@ -245,15 +242,15 @@ public class Board extends JPanel
                     Attributes.currentIsland.posUpdate();
                     break;
             }
-//            Methods.checkIsDead();
+            Methods.checkIsDead();
         }
         catch (Exception e) {
             e.printStackTrace();
             System.out.println("Player input error");
         }
-//        } else {
-//            Main.StartGame();
-//        }
+        } else {
+            Main.StartGame();
+        }
     }
 
 

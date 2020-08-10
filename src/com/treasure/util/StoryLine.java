@@ -44,30 +44,30 @@ public class StoryLine {
 
         ////////////////////////////////////////////Black Pearl
         bPearlMessages = new ArrayList<>();
-        bPearlMessages.add("black pearl 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        bPearlMessages.add("black pearl 1  message 2");
-        bPearlMessages.add("black pearl 1  message 3");
-        bPearlMessages.add("black pearl 1  message 4");
-        bPearlMessages.add("black pearl 1  message 5");
-        bPearlMessages.add("black pearl 1  message 6");
+        bPearlMessages.add("I heard the vendor has some nice items for purchase."); //91 characters across
+        bPearlMessages.add("Ye better hurry before it's all gone, matey!");
+        bPearlMessages.add(" ");
+        bPearlMessages.add(" ");
+        bPearlMessages.add(" ");
+        bPearlMessages.add(" ");
 
         //clue
         bPearlClues = new ArrayList<>();
-        bPearlClues.add("black pearl Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        bPearlClues.add("black pearl Clue 1  message 2");
-        bPearlClues.add("black pearl Clue 1  message 3");
-        bPearlClues.add("black pearl Clue 1  message 4");
-        bPearlClues.add("black pearl Clue 1  message 5");
-        bPearlClues.add("black pearl Clue 1  message 6");
+        bPearlClues.add("The more you fight, the more XP and gold there is for the taking."); //91 characters across
+        bPearlClues.add("Beware the pirates and friendlies alike, not all is what they appear.");
+        bPearlClues.add("I heard the nice ones may help you out.");
+        bPearlClues.add("Here's a key to get you started.");
+        bPearlClues.add(" ");
+        bPearlClues.add(" ");
 
         ////////////////////////////////////////////Rum Runner Island
         rum1messages = new ArrayList<>();
         rum1messages.add("Store Manager: What are you doing in my distillery?! You are not welcome here! ");
         rum1messages.add("If you're looking for trouble, you have run into your worst nightmare!");
         rum1messages.add("I'm not as friendly as the Master Brewer here!");
-//        rum1messages.add("rum 1  message 4");
-//        rum1messages.add("rum 1  message 5");
-//        rum1messages.add("rum 1  message 6");
+        rum1messages.add(" ");
+        rum1messages.add(" ");
+        rum1messages.add(" ");
 
         rum2messages = new ArrayList<>();
         rum2messages.add("Master Brewer: Watch out for that Store Manager, he hasn't been all there since");
@@ -81,9 +81,9 @@ public class StoryLine {
         rum3messages.add("Ghost of Jack Dans: Finally! I have been waiting for an eternity for someone like you! ");
         rum3messages.add("If you can manage to drink all of the rum here, you can have the secret key! ");
         rum3messages.add("No one has ever managed to finish!");
-//        rum3messages.add("rum 3  message 4");
-//        rum3messages.add("rum 3  message 5");
-//        rum3messages.add("rum 3  message 6");
+        rum3messages.add(" ");
+        rum3messages.add(" ");
+        rum3messages.add(" ");
 
         rum4messages = new ArrayList<>();
         rum4messages.add("Jojo: Long time no see my friend! I thought I'd never see you again!");
@@ -91,7 +91,7 @@ public class StoryLine {
         rum4messages.add("Well I hope you aren't out looking for treasure again...");
         rum4messages.add("I want no part of whatever crazy adventure you're trying to drag me into!");
         rum4messages.add("Get out of here!!");
-//        rum4messages.add("rum 4  message 6");
+        rum4messages.add(" ");
 
         //clues
         rum1Clues = new ArrayList<>();

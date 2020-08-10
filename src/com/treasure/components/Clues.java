@@ -31,9 +31,11 @@ public class Clues{
 
         ArrayList<String> messages = new ArrayList<>();
 
+
         switch (island) {
             case "Black Pearl":
                 messages = StoryLine.getbPearlClues();
+                Attributes.player.addsKey(); // add check and replace messages in messages array with new message
                 break;
             case "Rum Runner Island":
                 if (sum == 58) {

@@ -17,8 +17,6 @@ public class Player extends Entity {
     public Player(int x, int y) {
         super(x, y, 20);
         this.gold=0;
-//        this.equippedWeapon = Weapon.hand;
-//        this.equippedArmor = Armor.normal;
         this.alive=true;
         System.out.println("PLAYER CLASS: CREATING PLAYER AT "+x+ " "+y);
     }

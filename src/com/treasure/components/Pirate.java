@@ -10,8 +10,8 @@ public class Pirate extends Entity{
     private String name;
 
 
-    public Pirate(String name, int x, int y, int health) {
-        super(x, y, health);
+    public Pirate(String name, int x, int y, int health, int number) {
+        super(x, y, health, number);
         this.name=name;
         System.out.println("PIRATE CLASS: CREATING PIRATE AT "+x+ " "+y);
     }

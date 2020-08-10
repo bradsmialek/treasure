@@ -16,6 +16,7 @@ public class Methods {
     private static String message5 = " ";
     private static String message6 = " ";
     private static boolean yesNo = false;
+    public static Directions direction;
 
     public static void initializeTiles(){
 
@@ -28,7 +29,7 @@ public class Methods {
                         Attributes.player.setPos(x, y);
                         break;
                     case PIRATE:
-                        Attributes.pirates.add(new Pirate("Monster", x, y, 5)); // TODO make strength and or defense
+                        Attributes.pirates.add(new Pirate("pirate", x, y, 5, x)); // TODO make strength and or defense
                         break;
 //                    case FRIENDLY:
 //                        Attributes.friendlys.add(new Friendly("Friendly", x, y));  //  maybe??
@@ -48,6 +49,8 @@ public class Methods {
     }
 
     public static void playerHandler(Directions dir) throws Exception {
+
+//        direction = dir;
         Tile tile = null;
 
         switch(dir) {
@@ -69,7 +72,10 @@ public class Methods {
         //Handles the player movement
         switch(tile){
             case NOTHING:
-//                Attributes.currentSubGame = SubGames.NONE;
+
+                Attributes.currentSubGame = SubGames.NONE;
+                decided = Decision.NONE;
+            
                 Attributes.player.move(dir);
                 // every time player moves previous displayed message will dissapear
                 message = " ";
@@ -126,13 +132,14 @@ public class Methods {
                 decided = Decision.OPEN_DOOR;
                 break; //Ask to open door
             case PIRATE:
-                message = "Fight the pirate!?";
-                message2 = "   [Y] Yes     [N] No";
-                message3 = " ";
-                message4 = " ";
-                message5 = " ";
-                message6 = " ";
-                decided = Decision.FIGHT_PIRATE;
+                Methods.fightPirate(dir);
+//                message = "Fight the pirate!?";
+//                message2 = "   [Y] Yes     [N] No";
+//                message3 = " ";
+//                message4 = " ";
+//                message5 = " ";
+//                message6 = " ";
+//                decided = Decision.FIGHT_PIRATE;
 
                 break; //Handles encounters with pirates
             case FRIENDLY:
@@ -175,6 +182,8 @@ public class Methods {
             case CLUE:
                 message = "You found a clue. Would you like to read it?";
                 message2 = "   [Y] Yes     [N] No";
+                message3 = " ";
+                message4 = " ";
                 decided = Decision.CLUE;
                 break;
             case BLACKJACK:
@@ -374,7 +383,7 @@ public class Methods {
             message6 = " ";
         }
         else if(decided == Decision.FIGHT_PIRATE && yn) {
-            Methods.fightPirate(Attributes.player.getFacing());
+            Methods.fightPirate(direction);
 
         }
         else if (decided == Decision.FIGHT_PIRATE) {
@@ -461,6 +470,160 @@ public class Methods {
             message3 = " ";
         }
 
+        else if(decided == Decision.XP && yn) {
+            if(Attributes.player.getsGold()>=1000) {
+                message = "Thanks for buying!";
+                message2 = "+100 XP";
+                message3 = " ";
+                Attributes.player.takesGold(1000);
+                Attributes.player.addsXP(100);
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.XP) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.APPLE && yn) {
+            if(Attributes.player.getsGold()>=1 && Attributes.player.getHealth()<20)  {
+                message = "Thanks for buying!";
+                message2 = "+2 HP";
+                message3 = " ";
+                Attributes.player.takesGold(1);
+                Attributes.player.heal(2);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.APPLE) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.SWORD && yn) {
+            if(Attributes.player.getsGold()>=250) {
+                message = "Thanks for buying!";
+                message2 = "+4 STR";
+                message3 = " ";
+                Attributes.player.takesGold(250);
+//                Attributes.player.addsStrength(4);
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.SWORD) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.SOAP && yn) {
+            if(Attributes.player.getsGold()>=20 && Attributes.player.getHealth()<20) {
+                message = "Thanks for buying!";
+                message2 = "+10 HP";
+                message3 = " ";
+                Attributes.player.takesGold(20);
+                Attributes.player.heal(10);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.SOAP) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.BOW && yn) {
+            if(Attributes.player.getsGold()>=200) {
+                message = "Thanks for buying!";
+                message2 = "+3 STR";
+                message3 = " ";
+                Attributes.player.takesGold(200);
+//                Attributes.player.addsStrength(3);
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.BOW) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.WHISKEY && yn) {
+            if(Attributes.player.getsGold()>=4 && Attributes.player.getHealth()<20) {
+                message = "Thanks for buying!";
+                message2 = "+7 HP";
+                message3 = " ";
+                Attributes.player.takesGold(4);
+                Attributes.player.heal(7);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.WHISKEY) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.CORN && yn) {
+            if(Attributes.player.getsGold()>=2 && Attributes.player.getHealth()<20) {
+                message = "Thanks for buying!";
+                message2 = "+5 HP";
+                message3 = " ";
+                Attributes.player.takesGold(2);
+                Attributes.player.heal(5);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.CORN) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+
         decided = Decision.NONE;
     }
 
@@ -477,32 +640,57 @@ public class Methods {
             Methods.initializeTiles();
         }
         else if (islandNumber == 3) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(3);
-            Attributes.currentMap = new Maps(3);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=1){
+                Attributes.currentIsland = new Island(3);
+                Attributes.currentMap = new Maps(3);
+                Methods.initializeTiles();
+            }else{
+                message = "You need a piece of the map to get to Port Royal!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
+
         }
         else if (islandNumber == 4) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(4);
-            Attributes.currentMap = new Maps(4);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=2){
+                Attributes.currentIsland = new Island(4);
+                Attributes.currentMap = new Maps(4);
+                Methods.initializeTiles();
+            }else{
+                message = "You need a piece of the map to get to Isla De Cruces!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
         }
         else if (islandNumber == 5) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(5);
-            Attributes.currentMap = new Maps(5);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=3){
+                Attributes.currentIsland = new Island(5);
+                Attributes.currentMap = new Maps(5);
+                Methods.initializeTiles();
+            }else{
+                message = "You need a piece of the map to get to Isle De Muerta!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
         }
         else if (islandNumber == 6) {
-            //check for special key and map ------------------------------------------TODO
-            // no key no go message
-            Attributes.currentIsland = new Island(6);
-            Attributes.currentMap = new Maps(6);
-            Methods.initializeTiles();
+            if(Attributes.player.getSpecialMaps()>=4 && Attributes.player.getSpecialKeys()==3 && Attributes.player.getEmerald()==1){
+                Attributes.currentIsland = new Island(6);
+                Attributes.currentMap = new Maps(6);
+                Methods.initializeTiles();
+            }else{
+                message = "You need the map, 3 special keys, and a green emerald to get to Treasure Island!";
+                message2 = "";
+                message3 = "";
+                message4 = "";
+                message5 = "";
+            }
         }
         else {
             message = "Argh... fine, stay here.";
@@ -587,47 +775,44 @@ public class Methods {
         }
     }
 
-    public static void fightPirate(Directions dir) {
+    public static void fightPirate(Directions direction) {
         int pirateX=0, pirateY=0;
+        System.out.println(direction);
 
-        switch(dir) {
+        switch(direction) {
             case UP:
-                pirateX = Attributes.player.getx(); pirateY = Attributes.player.gety()-1;
-                break;
+                pirateX = Attributes.player.getx(); pirateY = Attributes.player.gety()-1; break;
             case LEFT:
-                pirateX = Attributes.player.getx()-1; pirateY = Attributes.player.gety();
-                break;
+                pirateX = Attributes.player.getx()-1; pirateY = Attributes.player.gety(); break;
             case DOWN:
-                pirateX = Attributes.player.getx(); pirateY = Attributes.player.gety()+1;
-                break;
+                pirateX = Attributes.player.getx(); pirateY = Attributes.player.gety()+1; break;
             case RIGHT:
-                pirateX = Attributes.player.getx()+1; pirateY = Attributes.player.gety();
-                break;
+                pirateX = Attributes.player.getx()+1; pirateY = Attributes.player.gety(); break;
         }
 
-//        int sum = pirateX+pirateY;
-        for(int i=0; i<Attributes.pirates.size(); i++) {
-            System.out.println("pirate array size: "+Attributes.pirates.size());
-            System.out.println("pirate in array: "+Attributes.pirates.get(i).getx() + ", "+Attributes.pirates.get(i).gety() );
-            System.out.println("character: "+Attributes.player.getx() + ", "+Attributes.player.gety() );
-            System.out.println("new pirate x and y: "+pirateX+ ", " + pirateY );
-            if(Attributes.pirates.get(i).getx() == pirateX && Attributes.pirates.get(i).gety() == pirateY) {
-                Attributes.pirates.get(i).damage(2);
-                Attributes.player.damage(2);
-
-                message = "You attacked the pirate.."; // and left him with " + Attributes.pirates.get(i).getHealth() + " HP!";
-                message2 = "Pirate HP = "+ + Attributes.pirates.get(i).getHealth();
-                message3 = " ";
-                message4 = "The pirate attacked you back!";
-                message5 = "-2 Dmg";
-
+        for(int i=0;i<Attributes.pirates.size();i++) {
+//            System.out.println("pirate array size: "+Attributes.pirates.size());
+//            System.out.println("pirate in array: "+Attributes.pirates.get(i).getpirx() + ", "+Attributes.pirates.get(i).getpiry() );
+//            System.out.println("character: "+Attributes.player.getx() + ", "+Attributes.player.gety() );
+//            System.out.println("new pirate x and y: "+pirateX+ ", " + pirateY );
+            if(Attributes.pirates.get(i).getpirx() == pirateX && Attributes.pirates.get(i).getpiry() == pirateY) {
+//                float playerAttack = Attributes.player.getStr()-(Attributes.pirates.get(i).getDef()/10)*Attributes.player.getStr();//--------------------TODO
+//                float pirateAttck = Attributes.pirates.get(i).getStr()-(Attributes.player.getDef()/10)*Attributes.pirates.get(i).getStr();//--------------------TODO
+                Attributes.pirates.get(i).damage(3);
+                Attributes.player.damage(3);
+                System.out.println(Attributes.pirates.get(i).getpirHealth());
+                message2 = "You attacked the pirate and left him with "+Attributes.pirates.get(i).getpirHealth()+" HP!";
+                message3 = "The pirate attacked you!";
             }
         }
     }
 
     public static void checkIsDead() {
         if(Attributes.player.getHealth()<=0) {
-            System.out.println("You Died!");
+            message = "You died!";
+            message2 = "Press any button to continue";
+            message3 = " ";
+            message4 = " ";
             Attributes.player.setDead();
         }
     }

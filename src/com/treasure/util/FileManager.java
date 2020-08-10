@@ -13,12 +13,13 @@ public class FileManager {
 
         System.out.println("COMPONENT MANAGER CLASS: READING "+filename);
         ArrayList<String> strings = new ArrayList<String>();
-        File file = new File(filename).getAbsoluteFile();
-        System.out.println(file);
+//        File file = new File(filename).getAbsoluteFile();
+//        System.out.println(file);
+        System.out.println(filename);
         try{
-            reader = new BufferedReader(new FileReader(file));
+            reader = new BufferedReader(new FileReader(filename));
         }catch (FileNotFoundException e) {
-            System.out.println("File MANAGER CLASS: [ERROR]: "+file+" not found!");
+            System.out.println("File MANAGER CLASS: [ERROR]: "+filename+" not found!");
         }
         try {
             String str = reader.readLine();

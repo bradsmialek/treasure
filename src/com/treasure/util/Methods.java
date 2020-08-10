@@ -70,6 +70,7 @@ public class Methods {
         switch(tile){
             case NOTHING:
                 Attributes.currentSubGame = SubGames.NONE;
+                decided = Decision.NONE;
                 Attributes.player.move(dir);
                 // every time player moves previous displayed message will dissapear
                 message = " ";

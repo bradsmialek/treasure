@@ -34,45 +34,45 @@ public class StoryLine {
 
 
         rum1messages = new ArrayList<>();
-        rum1messages.add("rum 1  message 1");
-        rum1messages.add("rum 1  message 2");
-        rum1messages.add("rum 1  message 3");
-        rum1messages.add("rum 1  message 4");
-        rum1messages.add("rum 1  message 5");
-        rum1messages.add("rum 1  message 6");
+        rum1messages.add("Store Manager: What are you doing in my distillery?! You are not welcome here! ");
+        rum1messages.add("If you're looking for trouble, you have run into your worst nightmare!");
+        rum1messages.add("I'm not as friendly as the Master Brewer here!");
+//        rum1messages.add("rum 1  message 4");
+//        rum1messages.add("rum 1  message 5");
+//        rum1messages.add("rum 1  message 6");
 
         rum1Clues = new ArrayList<>();
-        rum1Clues.add("rum1 Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        rum1Clues.add("rum1 Clue 1  message 2");
-        rum1Clues.add("rum1 Clue 1  message 3");
-        rum1Clues.add("rum1 Clue 1  message 4");
-        rum1Clues.add("rum1 Clue 1  message 5");
-        rum1Clues.add("rum1 Clue 1  message 6");
+        rum1Clues.add("Clue: four times. 6 upside down is a 9 now. "); //91 characters across
+//        rum1Clues.add("rum1 Clue 1  message 2");
+//        rum1Clues.add("rum1 Clue 1  message 3");
+//        rum1Clues.add("rum1 Clue 1  message 4");
+//        rum1Clues.add("rum1 Clue 1  message 5");
+//        rum1Clues.add("rum1 Clue 1  message 6");
 
 
         rum2messages = new ArrayList<>();
-        rum2messages.add("rum 2  message 1");
-        rum2messages.add("rum 2  message 2");
-        rum2messages.add("rum 2  message 3");
-        rum2messages.add("rum 2  message 4");
-        rum2messages.add("rum 2  message 5");
-        rum2messages.add("rum 2  message 6");
+        rum2messages.add("Master Brewer: Watch out for that Store Manager, he hasn't been all there since");
+        rum2messages.add("the last batch of pirates ransacked the distillery and drank all the rum...");
+        rum2messages.add("If you ever manage to get off this god forsaken island, take this map with you.");
+        rum2messages.add("Back in my day, I searched all over for treasure using this map and never had any luck...");
+        rum2messages.add("Maybe you'll have better luck than I did!");
+        rum2messages.add("Whatever you do, steer clear that abandoned distillery......");
 
         rum3messages = new ArrayList<>();
-        rum3messages.add("rum 3  message 1");
-        rum3messages.add("rum 3  message 2");
-        rum3messages.add("rum 3  message 3");
-        rum3messages.add("rum 3  message 4");
-        rum3messages.add("rum 3  message 5");
-        rum3messages.add("rum 3  message 6");
+        rum3messages.add("Ghost of Jack Dans: Finally! I have been waiting for an eternity for someone like you! ");
+        rum3messages.add("If you can manage to drink all of the rum here, you can have the secret key! ");
+        rum3messages.add("No one has ever managed to finish!");
+//        rum3messages.add("rum 3  message 4");
+//        rum3messages.add("rum 3  message 5");
+//        rum3messages.add("rum 3  message 6");
 
         rum4messages = new ArrayList<>();
-        rum4messages.add("rum 4  message 1");
-        rum4messages.add("rum 4  message 2");
-        rum4messages.add("rum 4  message 3");
-        rum4messages.add("rum 4  message 4");
-        rum4messages.add("rum 4  message 5");
-        rum4messages.add("rum 4  message 6");
+        rum4messages.add("Jojo: Long time no see my friend! I thought I'd never see you again!");
+        rum4messages.add("I heard that the ship you was lost at sea!");
+        rum4messages.add("Well I hope you aren't out looking for treasure again...");
+        rum4messages.add("I want no part of whatever crazy adventure you're trying to drag me into!");
+        rum4messages.add("Get out of here!!");
+//        rum4messages.add("rum 4  message 6");
 
     }
 

@@ -50,7 +50,7 @@ public class Main {
         Attributes.currentMap = new Maps(Maps.getMapNumber());
         System.out.println("\nMAIN CLASS: CREATING STORYLINE");
         StoryLine.createStoryline();
-//        Music.playMusic("/Users/bradsmialek/tlg/java/projects/treasure/src/com/treasure/music/song1.wav");
+        Music.playMusic("/Users/bradsmialek/tlg/java/projects/treasure/src/com/treasure/music/song1.wav");
 
         Attributes.player = new Player(19, 18);
         Attributes.pirates = new ArrayList<Pirate>();

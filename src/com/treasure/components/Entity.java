@@ -9,6 +9,12 @@ public class Entity {
 
     protected static int x;
     protected static int y;
+
+    protected static int pirx;
+    protected static int piry;
+    protected int pirhealth;
+    protected int number;
+
     protected int health;
     protected int xp;
     protected int level = 1;
@@ -23,6 +29,12 @@ public class Entity {
         this.health=health;
         this.maxHealth=health;
     }
+    protected Entity(int x, int y, int health, int number) {
+
+        this.setpirPos(x, y);
+        this.pirhealth=health;
+        this.number = number;
+    }
 
     //SETTERS
 
@@ -30,6 +42,10 @@ public class Entity {
     public void setPos(int x, int y){
         this.x = x;
         this.y = y;
+    }
+    public void setpirPos(int x, int y){
+        this.pirx = x;
+        this.piry = y;
     }
 
     // GETTERS
@@ -41,9 +57,21 @@ public class Entity {
         return y;
     }
 
+    public int getpirx() {
+        return pirx;
+    }
+
+    public int getpiry() {
+        return piry;
+    }
+
 
     public int getHealth() {
         return health;
+    }
+
+    public int getpirHealth() {
+        return pirhealth;
     }
 
     public int getMaxHealth() {
@@ -56,6 +84,7 @@ public class Entity {
 
     public void damage(int dmg){
         this.health -= dmg;
+        this.pirhealth -= dmg;
     }
 
     public void heal(int amount){

@@ -56,7 +56,7 @@ public class StoryLine {
         bPearlClues.add("The more you fight, the more XP and gold there is for the taking."); //91 characters across
         bPearlClues.add("Beware the pirates and friendlies alike, not all is what they appear.");
         bPearlClues.add("I heard the nice ones may help you out.");
-        bPearlClues.add("Here's a key to get you started!");
+        bPearlClues.add("Here's a key to get you started.");
         bPearlClues.add(" ");
         bPearlClues.add(" ");
 

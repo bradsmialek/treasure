@@ -34,6 +34,7 @@ public class Clues{
         switch (island) {
             case "Black Pearl":
                 messages = StoryLine.getbPearlClues();
+                Attributes.player.addsKey();
                 break;
             case "Rum Runner Island":
                 if (sum == 58) {

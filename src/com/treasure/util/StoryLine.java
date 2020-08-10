@@ -44,21 +44,21 @@ public class StoryLine {
 
         ////////////////////////////////////////////Black Pearl
         bPearlMessages = new ArrayList<>();
-        bPearlMessages.add("black pearl 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        bPearlMessages.add("black pearl 1  message 2");
-        bPearlMessages.add("black pearl 1  message 3");
-        bPearlMessages.add("black pearl 1  message 4");
-        bPearlMessages.add("black pearl 1  message 5");
-        bPearlMessages.add("black pearl 1  message 6");
+        bPearlMessages.add("I heard the vendor has some nice items for purchase."); //91 characters across
+        bPearlMessages.add("Ye better hurry before it's all gone, matey!");
+        bPearlMessages.add(" ");
+        bPearlMessages.add(" ");
+        bPearlMessages.add(" ");
+        bPearlMessages.add(" ");
 
         //clue
         bPearlClues = new ArrayList<>();
-        bPearlClues.add("black pearl Clue 1  message 1vknsldvgknsldknvlklksndflksnflbknsflkbnsfvnsdlkn gvksdn glksdnlkkk"); //91 characters across
-        bPearlClues.add("black pearl Clue 1  message 2");
-        bPearlClues.add("black pearl Clue 1  message 3");
-        bPearlClues.add("black pearl Clue 1  message 4");
-        bPearlClues.add("black pearl Clue 1  message 5");
-        bPearlClues.add("black pearl Clue 1  message 6");
+        bPearlClues.add("The more you fight, the more XP and gold there is for the taking."); //91 characters across
+        bPearlClues.add("Beware the pirates and friendlies alike, not all is what they appear.");
+        bPearlClues.add("I heard the nice ones may help you out.");
+        bPearlClues.add("Here's a key to get you started!");
+        bPearlClues.add(" ");
+        bPearlClues.add(" ");
 
         ////////////////////////////////////////////Rum Runner Island
         rum1messages = new ArrayList<>();

@@ -461,6 +461,160 @@ public class Methods {
             message3 = " ";
         }
 
+        else if(decided == Decision.XP && yn) {
+            if(Attributes.player.getsGold()>=1000) {
+                message = "Thanks for buying!";
+                message2 = "+100 XP";
+                message3 = " ";
+                Attributes.player.takesGold(1000);
+                Attributes.player.addsXP(100);
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.XP) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.APPLE && yn) {
+            if(Attributes.player.getsGold()>=1 && Attributes.player.getHealth()<20)  {
+                message = "Thanks for buying!";
+                message2 = "+2 HP";
+                message3 = " ";
+                Attributes.player.takesGold(1);
+                Attributes.player.heal(2);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.APPLE) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.SWORD && yn) {
+            if(Attributes.player.getsGold()>=250) {
+                message = "Thanks for buying!";
+                message2 = "+4 STR";
+                message3 = " ";
+                Attributes.player.takesGold(250);
+//                Attributes.player.addsStrength(4);
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.SWORD) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.SOAP && yn) {
+            if(Attributes.player.getsGold()>=20 && Attributes.player.getHealth()<20) {
+                message = "Thanks for buying!";
+                message2 = "+10 HP";
+                message3 = " ";
+                Attributes.player.takesGold(20);
+                Attributes.player.heal(10);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.SOAP) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.BOW && yn) {
+            if(Attributes.player.getsGold()>=200) {
+                message = "Thanks for buying!";
+                message2 = "+3 STR";
+                message3 = " ";
+                Attributes.player.takesGold(200);
+//                Attributes.player.addsStrength(3);
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.BOW) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.WHISKEY && yn) {
+            if(Attributes.player.getsGold()>=4 && Attributes.player.getHealth()<20) {
+                message = "Thanks for buying!";
+                message2 = "+7 HP";
+                message3 = " ";
+                Attributes.player.takesGold(4);
+                Attributes.player.heal(7);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.WHISKEY) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+        else if(decided == Decision.CORN && yn) {
+            if(Attributes.player.getsGold()>=2 && Attributes.player.getHealth()<20) {
+                message = "Thanks for buying!";
+                message2 = "+5 HP";
+                message3 = " ";
+                Attributes.player.takesGold(2);
+                Attributes.player.heal(5);
+            }
+            else if(Attributes.player.getHealth() == 20){
+                message = "You're HP is already full.";
+                message2 = " ";
+                message3 = " ";
+            }
+            else{
+                message = "You don't have enough gold.";
+                message2 = " ";
+                message3 = " ";
+            }
+        }
+        else if(decided == Decision.CORN) {
+            message = "Thanks";
+            message2 = "";
+            message3 = "";
+        }
+
         decided = Decision.NONE;
     }
 

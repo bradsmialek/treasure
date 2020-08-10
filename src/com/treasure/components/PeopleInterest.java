@@ -79,7 +79,7 @@ public class PeopleInterest  {
             switch(sum) {
                 case 20:
                     messages = StoryLine.getCruces1messages();
-                    Attributes.player.getEmerald();
+                    Attributes.player.addsEmerald();
                     break;
                 case 67:
                     messages = StoryLine.getCruces2messages();
@@ -89,7 +89,7 @@ public class PeopleInterest  {
                     break;
                 case 85: //
                     messages = StoryLine.getCruces4messages();
-                    Attributes.player.getSpecialKeys();
+                    Attributes.player.addsSpecialKey();
                     break;
 
             }

@@ -12,15 +12,15 @@ clues and story lines. Feel free to clone and make it your own, or implement you
 - Javazoom.jl.player
 
   
-### To Run From Console:  
-1. Extension - Live Server
-1. Fork or Clone
-1. Open at root of project - GameUp_Inc
-1. Right click on index.html and select open with Live Server
+### Options to play:  
+1. Fork project, run from IDE or console
+1. Execute JAR file below
+1. AWS S3 and Elastic Beanstalk to come
+1. Other options to come
 
-###JAR File
+### JAR File
 
-####References
+#### References
 1. [Trystan's Blog](http://trystans.blogspot.com/2011/08/roguelike-tutorial-04-player.html)
 1. [RogueBasin](http://www.roguebasin.com/index.php?title=Main_Page)
 1. [Ascii Roguelike Game in Java](https://www.youtube.com/watch?v=E54vcafH-h0)
